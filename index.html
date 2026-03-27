@@ -341,257 +341,242 @@
 </header>-->
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#whats-new-in-3.17" id="toc-whats-new-in-3.17">What's new
-in 3.17</a></li>
-<li><a href="#base-protocol" id="toc-base-protocol">Base Protocol</a>
+<li><a href="#whatIsNew" id="toc-whatIsNew">What's new in 3.17</a></li>
+<li><a href="#baseProtocol" id="toc-baseProtocol">Base Protocol</a>
 <ul>
-<li><a href="#header-part" id="toc-header-part">Header Part</a></li>
-<li><a href="#content-part" id="toc-content-part">Content Part</a></li>
+<li><a href="#headerPart" id="toc-headerPart">Header Part</a></li>
+<li><a href="#contentPart" id="toc-contentPart">Content Part</a></li>
 <li><a href="#example" id="toc-example">Example:</a></li>
 <li><a href="#base-protocol-json-structures"
 id="toc-base-protocol-json-structures">Base Protocol JSON structures</a>
 <ul>
-<li><a href="#base-types" id="toc-base-types">Base Types</a></li>
-<li><a href="#abstract-message" id="toc-abstract-message">Abstract
+<li><a href="#baseTypes" id="toc-baseTypes">Base Types</a></li>
+<li><a href="#abstractMessage" id="toc-abstractMessage">Abstract
 Message</a></li>
-<li><a href="#request-message" id="toc-request-message">Request
+<li><a href="#requestMessage" id="toc-requestMessage">Request
 Message</a></li>
-<li><a href="#response-message" id="toc-response-message">Response
+<li><a href="#responseMessage" id="toc-responseMessage">Response
 Message</a></li>
-<li><a href="#notification-message"
-id="toc-notification-message">Notification Message</a></li>
-<li><a href="#notifications-and-requests"
-id="toc-notifications-and-requests">$ Notifications and
-Requests</a></li>
-<li><a href="#cancellation-support-sn-cn"
-id="toc-cancellation-support-sn-cn">Cancellation Support (SN
+<li><a href="#notificationMessage"
+id="toc-notificationMessage">Notification Message</a></li>
+<li><a href="#dollarRequests" id="toc-dollarRequests">$ Notifications
+and Requests</a></li>
+<li><a href="#cancelRequest" id="toc-cancelRequest">Cancellation Support
+(SN CN)</a></li>
+<li><a href="#progress" id="toc-progress">Progress Support (SN
 CN)</a></li>
-<li><a href="#progress-support-sn-cn"
-id="toc-progress-support-sn-cn">Progress Support (SN CN)</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#language-server-protocol"
-id="toc-language-server-protocol">Language Server Protocol</a>
+<li><a href="#languageServerProtocol"
+id="toc-languageServerProtocol">Language Server Protocol</a>
 <ul>
 <li><a href="#capabilities" id="toc-capabilities">Capabilities</a></li>
-<li><a href="#request-notification-and-response-ordering"
-id="toc-request-notification-and-response-ordering">Request,
+<li><a href="#messageOrdering" id="toc-messageOrdering">Request,
 Notification and Response Ordering</a></li>
-<li><a href="#message-documentation"
-id="toc-message-documentation">Message Documentation</a></li>
-<li><a href="#basic-json-structures"
-id="toc-basic-json-structures">Basic JSON Structures</a>
+<li><a href="#messageDocumentation"
+id="toc-messageDocumentation">Message Documentation</a></li>
+<li><a href="#basicJsonStructures" id="toc-basicJsonStructures">Basic
+JSON Structures</a>
 <ul>
 <li><a href="#uri" id="toc-uri">URI</a></li>
-<li><a href="#regular-expressions" id="toc-regular-expressions">Regular
-Expressions</a></li>
+<li><a href="#regExp" id="toc-regExp">Regular Expressions</a></li>
 <li><a href="#enumerations" id="toc-enumerations">Enumerations</a></li>
-<li><a href="#text-documents" id="toc-text-documents">Text
+<li><a href="#textDocuments" id="toc-textDocuments">Text
 Documents</a></li>
 <li><a href="#position" id="toc-position">Position</a></li>
 <li><a href="#range" id="toc-range">Range</a></li>
-<li><a href="#textdocumentitem"
-id="toc-textdocumentitem">TextDocumentItem</a></li>
-<li><a href="#textdocumentidentifier"
-id="toc-textdocumentidentifier">TextDocumentIdentifier</a></li>
-<li><a href="#versionedtextdocumentidentifier"
-id="toc-versionedtextdocumentidentifier">VersionedTextDocumentIdentifier</a></li>
-<li><a href="#textdocumentpositionparams"
-id="toc-textdocumentpositionparams">TextDocumentPositionParams</a></li>
-<li><a href="#documentfilter"
-id="toc-documentfilter">DocumentFilter</a></li>
-<li><a href="#textedit-annotatedtextedit"
-id="toc-textedit-annotatedtextedit">TextEdit &amp;
+<li><a href="#textDocumentItem"
+id="toc-textDocumentItem">TextDocumentItem</a></li>
+<li><a href="#textDocumentIdentifier"
+id="toc-textDocumentIdentifier">TextDocumentIdentifier</a></li>
+<li><a href="#versionedTextDocumentIdentifier"
+id="toc-versionedTextDocumentIdentifier">VersionedTextDocumentIdentifier</a></li>
+<li><a href="#textDocumentPositionParams"
+id="toc-textDocumentPositionParams">TextDocumentPositionParams</a></li>
+<li><a href="#documentFilter"
+id="toc-documentFilter">DocumentFilter</a></li>
+<li><a href="#textEdit" id="toc-textEdit">TextEdit &amp;
 AnnotatedTextEdit</a></li>
-<li><a href="#textedit" id="toc-textedit">TextEdit[]</a></li>
-<li><a href="#textdocumentedit"
-id="toc-textdocumentedit">TextDocumentEdit</a></li>
+<li><a href="#textEditArray" id="toc-textEditArray">TextEdit[]</a></li>
+<li><a href="#textDocumentEdit"
+id="toc-textDocumentEdit">TextDocumentEdit</a></li>
 <li><a href="#location" id="toc-location">Location</a></li>
-<li><a href="#locationlink" id="toc-locationlink">LocationLink</a></li>
+<li><a href="#locationLink" id="toc-locationLink">LocationLink</a></li>
 <li><a href="#diagnostic" id="toc-diagnostic">Diagnostic</a></li>
 <li><a href="#command" id="toc-command">Command</a></li>
-<li><a href="#markupcontent"
-id="toc-markupcontent">MarkupContent</a></li>
+<li><a href="#markupContent"
+id="toc-markupContent">MarkupContent</a></li>
 </ul></li>
-<li><a href="#file-resource-changes" id="toc-file-resource-changes">File
-Resource changes</a>
+<li><a href="#resourceChanges" id="toc-resourceChanges">File Resource
+changes</a>
 <ul>
-<li><a href="#workspaceedit" id="toc-workspaceedit">WorkspaceEdit</a>
+<li><a href="#workspaceEdit" id="toc-workspaceEdit">WorkspaceEdit</a>
 <ul>
-<li><a href="#workspaceeditclientcapabilities"
-id="toc-workspaceeditclientcapabilities">WorkspaceEditClientCapabilities</a></li>
+<li><a href="#workspaceEditClientCapabilities"
+id="toc-workspaceEditClientCapabilities">WorkspaceEditClientCapabilities</a></li>
 </ul></li>
-<li><a href="#work-done-progress" id="toc-work-done-progress">Work Done
+<li><a href="#workDoneProgress" id="toc-workDoneProgress">Work Done
 Progress</a>
 <ul>
-<li><a href="#work-done-progress-begin"
-id="toc-work-done-progress-begin">Work Done Progress Begin</a></li>
-<li><a href="#work-done-progress-report"
-id="toc-work-done-progress-report">Work Done Progress Report</a></li>
-<li><a href="#work-done-progress-end"
-id="toc-work-done-progress-end">Work Done Progress End</a></li>
-<li><a href="#initiating-work-done-progress"
-id="toc-initiating-work-done-progress">Initiating Work Done
+<li><a href="#workDoneProgressBegin" id="toc-workDoneProgressBegin">Work
+Done Progress Begin</a></li>
+<li><a href="#workDoneProgressReport"
+id="toc-workDoneProgressReport">Work Done Progress Report</a></li>
+<li><a href="#workDoneProgressEnd" id="toc-workDoneProgressEnd">Work
+Done Progress End</a></li>
+<li><a href="#initiatingWorkDoneProgress"
+id="toc-initiatingWorkDoneProgress">Initiating Work Done
 Progress</a></li>
 </ul></li>
-<li><a href="#partial-result-progress"
-id="toc-partial-result-progress">Partial Result Progress</a></li>
-<li><a href="#partialresultparams"
-id="toc-partialresultparams">PartialResultParams</a></li>
-<li><a href="#tracevalue" id="toc-tracevalue">TraceValue</a></li>
+<li><a href="#partialResults" id="toc-partialResults">Partial Result
+Progress</a></li>
+<li><a href="#partialResultParams"
+id="toc-partialResultParams">PartialResultParams</a></li>
+<li><a href="#traceValue" id="toc-traceValue">TraceValue</a></li>
 </ul></li>
-<li><a href="#server-lifecycle" id="toc-server-lifecycle">Server
+<li><a href="#lifeCycleMessages" id="toc-lifeCycleMessages">Server
 lifecycle</a>
 <ul>
-<li><a href="#initialize-request-cr"
-id="toc-initialize-request-cr">Initialize Request (CR)</a>
+<li><a href="#initialize" id="toc-initialize">Initialize Request
+(CR)</a>
 <ul>
 <li><a href="#textdocumentclientcapabilities"
 id="toc-textdocumentclientcapabilities">TextDocumentClientCapabilities</a></li>
 <li><a href="#notebookdocumentclientcapabilities"
 id="toc-notebookdocumentclientcapabilities">NotebookDocumentClientCapabilities</a></li>
 </ul></li>
-<li><a href="#initialized-notification-sn"
-id="toc-initialized-notification-sn">Initialized Notification
+<li><a href="#initialized" id="toc-initialized">Initialized Notification
 (SN)</a></li>
-<li><a href="#register-capability-sr"
-id="toc-register-capability-sr">Register Capability (SR)</a></li>
-<li><a href="#unregister-capability-sr"
-id="toc-unregister-capability-sr">Unregister Capability (SR)</a></li>
-<li><a href="#settrace-notification-sn"
-id="toc-settrace-notification-sn">SetTrace Notification (SN)</a></li>
-<li><a href="#logtrace-notification-cn"
-id="toc-logtrace-notification-cn">LogTrace Notification (CN)</a></li>
-<li><a href="#shutdown-request-cr" id="toc-shutdown-request-cr">Shutdown
-Request (CR)</a></li>
-<li><a href="#exit-notification-sn" id="toc-exit-notification-sn">Exit
-Notification (SN)</a></li>
+<li><a href="#client_registerCapability"
+id="toc-client_registerCapability">Register Capability (SR)</a></li>
+<li><a href="#client_unregisterCapability"
+id="toc-client_unregisterCapability">Unregister Capability (SR)</a></li>
+<li><a href="#setTrace" id="toc-setTrace">SetTrace Notification
+(SN)</a></li>
+<li><a href="#logTrace" id="toc-logTrace">LogTrace Notification
+(CN)</a></li>
+<li><a href="#shutdown" id="toc-shutdown">Shutdown Request (CR)</a></li>
+<li><a href="#exit" id="toc-exit">Exit Notification (SN)</a></li>
 </ul></li>
-<li><a href="#text-document-synchronization"
-id="toc-text-document-synchronization">Text Document Synchronization</a>
+<li><a href="#textDocument_synchronization"
+id="toc-textDocument_synchronization">Text Document Synchronization</a>
 <ul>
-<li><a href="#didopentextdocument-notification-sn"
-id="toc-didopentextdocument-notification-sn">DidOpenTextDocument
-Notification (SN)</a></li>
-<li><a href="#didchangetextdocument-notification-sn"
-id="toc-didchangetextdocument-notification-sn">DidChangeTextDocument
-Notification (SN)</a></li>
-<li><a href="#willsavetextdocument-notification-sn"
-id="toc-willsavetextdocument-notification-sn">WillSaveTextDocument
-Notification (SN)</a></li>
-<li><a href="#willsavewaituntiltextdocument-request-cr"
-id="toc-willsavewaituntiltextdocument-request-cr">WillSaveWaitUntilTextDocument
+<li><a href="#textDocument_didOpen"
+id="toc-textDocument_didOpen">DidOpenTextDocument Notification
+(SN)</a></li>
+<li><a href="#textDocument_didChange"
+id="toc-textDocument_didChange">DidChangeTextDocument Notification
+(SN)</a></li>
+<li><a href="#textDocument_willSave"
+id="toc-textDocument_willSave">WillSaveTextDocument Notification
+(SN)</a></li>
+<li><a href="#textDocument_willSaveWaitUntil"
+id="toc-textDocument_willSaveWaitUntil">WillSaveWaitUntilTextDocument
 Request (CR)</a></li>
-<li><a href="#didsavetextdocument-notification-sn"
-id="toc-didsavetextdocument-notification-sn">DidSaveTextDocument
-Notification (SN)</a></li>
-<li><a href="#didclosetextdocument-notification-sn"
-id="toc-didclosetextdocument-notification-sn">DidCloseTextDocument
-Notification (SN)</a></li>
-<li><a href="#renaming-a-document" id="toc-renaming-a-document">Renaming
-a document</a></li>
+<li><a href="#textDocument_didSave"
+id="toc-textDocument_didSave">DidSaveTextDocument Notification
+(SN)</a></li>
+<li><a href="#textDocument_didClose"
+id="toc-textDocument_didClose">DidCloseTextDocument Notification
+(SN)</a></li>
+<li><a href="#textDocument_didRename"
+id="toc-textDocument_didRename">Renaming a document</a></li>
 </ul></li>
-<li><a href="#notebook-document-synchronization"
-id="toc-notebook-document-synchronization">Notebook Document
+<li><a href="#notebookDocument_synchronization"
+id="toc-notebookDocument_synchronization">Notebook Document
 Synchronization</a>
 <ul>
-<li><a href="#didopennotebookdocument-notification-sn"
-id="toc-didopennotebookdocument-notification-sn">DidOpenNotebookDocument
+<li><a href="#notebookDocument_didOpen"
+id="toc-notebookDocument_didOpen">DidOpenNotebookDocument Notification
+(SN)</a></li>
+<li><a href="#notebookDocument_didChange"
+id="toc-notebookDocument_didChange">DidChangeNotebookDocument
 Notification (SN)</a></li>
-<li><a href="#didchangenotebookdocument-notification-sn"
-id="toc-didchangenotebookdocument-notification-sn">DidChangeNotebookDocument
-Notification (SN)</a></li>
-<li><a href="#didsavenotebookdocument-notification-sn"
-id="toc-didsavenotebookdocument-notification-sn">DidSaveNotebookDocument
-Notification (SN)</a></li>
-<li><a href="#didclosenotebookdocument-notification-sn"
-id="toc-didclosenotebookdocument-notification-sn">DidCloseNotebookDocument
-Notification (SN)</a></li>
+<li><a href="#notebookDocument_didSave"
+id="toc-notebookDocument_didSave">DidSaveNotebookDocument Notification
+(SN)</a></li>
+<li><a href="#notebookDocument_didClose"
+id="toc-notebookDocument_didClose">DidCloseNotebookDocument Notification
+(SN)</a></li>
 </ul></li>
-<li><a href="#language-features" id="toc-language-features">Language
+<li><a href="#languageFeatures" id="toc-languageFeatures">Language
 Features</a>
 <ul>
-<li><a href="#goto-declaration-request-cr"
-id="toc-goto-declaration-request-cr">Goto Declaration Request
+<li><a href="#textDocument_declaration"
+id="toc-textDocument_declaration">Goto Declaration Request (CR)</a></li>
+<li><a href="#textDocument_definition"
+id="toc-textDocument_definition">Goto Definition Request (CR)</a></li>
+<li><a href="#textDocument_typeDefinition"
+id="toc-textDocument_typeDefinition">Goto Type Definition Request
 (CR)</a></li>
-<li><a href="#goto-definition-request-cr"
-id="toc-goto-definition-request-cr">Goto Definition Request
+<li><a href="#textDocument_implementation"
+id="toc-textDocument_implementation">Goto Implementation Request
 (CR)</a></li>
-<li><a href="#goto-type-definition-request-cr"
-id="toc-goto-type-definition-request-cr">Goto Type Definition Request
-(CR)</a></li>
-<li><a href="#goto-implementation-request-cr"
-id="toc-goto-implementation-request-cr">Goto Implementation Request
-(CR)</a></li>
-<li><a href="#find-references-request-cr"
-id="toc-find-references-request-cr">Find References Request
-(CR)</a></li>
-<li><a href="#prepare-call-hierarchy-request-cr"
-id="toc-prepare-call-hierarchy-request-cr">Prepare Call Hierarchy
+<li><a href="#textDocument_references"
+id="toc-textDocument_references">Find References Request (CR)</a></li>
+<li><a href="#textDocument_prepareCallHierarchy"
+id="toc-textDocument_prepareCallHierarchy">Prepare Call Hierarchy
 Request (CR)</a></li>
-<li><a href="#call-hierarchy-incoming-calls-cr"
-id="toc-call-hierarchy-incoming-calls-cr">Call Hierarchy Incoming Calls
+<li><a href="#callHierarchy_incomingCalls"
+id="toc-callHierarchy_incomingCalls">Call Hierarchy Incoming Calls
 (CR)</a></li>
-<li><a href="#call-hierarchy-outgoing-calls-cr"
-id="toc-call-hierarchy-outgoing-calls-cr">Call Hierarchy Outgoing Calls
+<li><a href="#callHierarchy_outgoingCalls"
+id="toc-callHierarchy_outgoingCalls">Call Hierarchy Outgoing Calls
 (CR)</a></li>
-<li><a href="#prepare-type-hierarchy-request-cr"
-id="toc-prepare-type-hierarchy-request-cr">Prepare Type Hierarchy
+<li><a href="#textDocument_prepareTypeHierarchy"
+id="toc-textDocument_prepareTypeHierarchy">Prepare Type Hierarchy
 Request (CR)</a></li>
-<li><a href="#type-hierarchy-supertypescr"
-id="toc-type-hierarchy-supertypescr">Type Hierarchy
-Supertypes(CR)</a></li>
-<li><a href="#type-hierarchy-subtypescr"
-id="toc-type-hierarchy-subtypescr">Type Hierarchy Subtypes(CR)</a></li>
-<li><a href="#document-highlights-request-cr"
-id="toc-document-highlights-request-cr">Document Highlights Request
+<li><a href="#typeHierarchy_supertypes"
+id="toc-typeHierarchy_supertypes">Type Hierarchy Supertypes(CR)</a></li>
+<li><a href="#typeHierarchy_subtypes"
+id="toc-typeHierarchy_subtypes">Type Hierarchy Subtypes(CR)</a></li>
+<li><a href="#textDocument_documentHighlight"
+id="toc-textDocument_documentHighlight">Document Highlights Request
 (CR)</a></li>
-<li><a href="#document-link-request-cr"
-id="toc-document-link-request-cr">Document Link Request (CR)</a></li>
-<li><a href="#document-link-resolve-request-cr"
-id="toc-document-link-resolve-request-cr">Document Link Resolve Request
+<li><a href="#textDocument_documentLink"
+id="toc-textDocument_documentLink">Document Link Request (CR)</a></li>
+<li><a href="#documentLink_resolve"
+id="toc-documentLink_resolve">Document Link Resolve Request
 (CR)</a></li>
-<li><a href="#hover-request-cr" id="toc-hover-request-cr">Hover Request
-(CR)</a></li>
-<li><a href="#code-lens-request-cr" id="toc-code-lens-request-cr">Code
+<li><a href="#textDocument_hover" id="toc-textDocument_hover">Hover
+Request (CR)</a></li>
+<li><a href="#textDocument_codeLens" id="toc-textDocument_codeLens">Code
 Lens Request (CR)</a></li>
-<li><a href="#code-lens-resolve-request-cr"
-id="toc-code-lens-resolve-request-cr">Code Lens Resolve Request
+<li><a href="#codeLens_resolve" id="toc-codeLens_resolve">Code Lens
+Resolve Request (CR)</a></li>
+<li><a href="#codeLens_refresh" id="toc-codeLens_refresh">Code Lens
+Refresh Request (SR)</a></li>
+<li><a href="#textDocument_foldingRange"
+id="toc-textDocument_foldingRange">Folding Range Request (CR)</a></li>
+<li><a href="#textDocument_selectionRange"
+id="toc-textDocument_selectionRange">Selection Range Request
 (CR)</a></li>
-<li><a href="#code-lens-refresh-request-sr"
-id="toc-code-lens-refresh-request-sr">Code Lens Refresh Request
+<li><a href="#textDocument_documentSymbol"
+id="toc-textDocument_documentSymbol">Document Symbols Request
+(CR)</a></li>
+<li><a href="#textDocument_semanticTokens"
+id="toc-textDocument_semanticTokens">Semantic Tokens (CR)</a></li>
+<li><a href="#textDocument_inlayHint"
+id="toc-textDocument_inlayHint">Inlay Hint Request (CR)</a></li>
+<li><a href="#inlayHint_resolve" id="toc-inlayHint_resolve">Inlay Hint
+Resolve Request (CR)</a></li>
+<li><a href="#workspace_inlayHint_refresh"
+id="toc-workspace_inlayHint_refresh">Inlay Hint Refresh Request
 (SR)</a></li>
-<li><a href="#folding-range-request-cr"
-id="toc-folding-range-request-cr">Folding Range Request (CR)</a></li>
-<li><a href="#selection-range-request-cr"
-id="toc-selection-range-request-cr">Selection Range Request
-(CR)</a></li>
-<li><a href="#document-symbols-request-cr"
-id="toc-document-symbols-request-cr">Document Symbols Request
-(CR)</a></li>
-<li><a href="#semantic-tokens-cr" id="toc-semantic-tokens-cr">Semantic
-Tokens (CR)</a></li>
-<li><a href="#inlay-hint-request-cr"
-id="toc-inlay-hint-request-cr">Inlay Hint Request (CR)</a></li>
-<li><a href="#inlay-hint-resolve-request-cr"
-id="toc-inlay-hint-resolve-request-cr">Inlay Hint Resolve Request
-(CR)</a></li>
-<li><a href="#inlay-hint-refresh-request-sr"
-id="toc-inlay-hint-refresh-request-sr">Inlay Hint Refresh Request
+<li><a href="#textDocument_inlineValue"
+id="toc-textDocument_inlineValue">Inline Value Request (CR)</a></li>
+<li><a href="#workspace_inlineValue_refresh"
+id="toc-workspace_inlineValue_refresh">Inline Value Refresh Request
 (SR)</a></li>
-<li><a href="#inline-value-request-cr"
-id="toc-inline-value-request-cr">Inline Value Request (CR)</a></li>
-<li><a href="#inline-value-refresh-request-sr"
-id="toc-inline-value-refresh-request-sr">Inline Value Refresh Request
-(SR)</a></li>
-<li><a href="#monikers-cr" id="toc-monikers-cr">Monikers (CR)</a>
+<li><a href="#textDocument_moniker"
+id="toc-textDocument_moniker">Monikers (CR)</a>
 <ul>
 <li><a href="#notes" id="toc-notes">Notes</a></li>
 </ul></li>
-<li><a href="#completion-request-cr"
-id="toc-completion-request-cr">Completion Request (CR)</a>
+<li><a href="#textDocument_completion"
+id="toc-textDocument_completion">Completion Request (CR)</a>
 <ul>
-<li><a href="#snippet-syntax" id="toc-snippet-syntax">Snippet
+<li><a href="#snippet_syntax" id="toc-snippet_syntax">Snippet
 Syntax</a></li>
 <li><a href="#tab-stops" id="toc-tab-stops">Tab stops</a></li>
 <li><a href="#placeholders" id="toc-placeholders">Placeholders</a></li>
@@ -601,152 +586,157 @@ Syntax</a></li>
 Transforms</a></li>
 <li><a href="#grammar" id="toc-grammar">Grammar</a></li>
 </ul></li>
-<li><a href="#completion-item-resolve-request-cr"
-id="toc-completion-item-resolve-request-cr">Completion Item Resolve
-Request (CR)</a></li>
-<li><a href="#publishdiagnostics-notification-cn"
-id="toc-publishdiagnostics-notification-cn">PublishDiagnostics
-Notification (CN)</a></li>
-<li><a href="#pull-diagnostics" id="toc-pull-diagnostics">Pull
-Diagnostics</a>
+<li><a href="#completionItem_resolve"
+id="toc-completionItem_resolve">Completion Item Resolve Request
+(CR)</a></li>
+<li><a href="#textDocument_publishDiagnostics"
+id="toc-textDocument_publishDiagnostics">PublishDiagnostics Notification
+(CN)</a></li>
+<li><a href="#textDocument_pullDiagnostics"
+id="toc-textDocument_pullDiagnostics">Pull Diagnostics</a>
 <ul>
-<li><a href="#document-diagnosticscr"
-id="toc-document-diagnosticscr">Document Diagnostics(CR)</a></li>
-<li><a href="#workspace-diagnosticscr"
-id="toc-workspace-diagnosticscr">Workspace Diagnostics(CR)</a></li>
-<li><a href="#diagnostics-refreshsr"
-id="toc-diagnostics-refreshsr">Diagnostics Refresh(SR)</a></li>
+<li><a href="#textDocument_diagnostic"
+id="toc-textDocument_diagnostic">Document Diagnostics(CR)</a></li>
+<li><a href="#workspace_diagnostic"
+id="toc-workspace_diagnostic">Workspace Diagnostics(CR)</a></li>
+<li><a href="#diagnostic_refresh"
+id="toc-diagnostic_refresh">Diagnostics Refresh(SR)</a></li>
 <li><a href="#implementation-considerations"
 id="toc-implementation-considerations">Implementation
 Considerations</a></li>
 </ul></li>
-<li><a href="#signature-help-request-cr"
-id="toc-signature-help-request-cr">Signature Help Request (CR)</a></li>
-<li><a href="#code-action-request-cr"
-id="toc-code-action-request-cr">Code Action Request (CR)</a></li>
-<li><a href="#code-action-resolve-request-cr"
-id="toc-code-action-resolve-request-cr">Code Action Resolve Request
+<li><a href="#textDocument_signatureHelp"
+id="toc-textDocument_signatureHelp">Signature Help Request (CR)</a></li>
+<li><a href="#textDocument_codeAction"
+id="toc-textDocument_codeAction">Code Action Request (CR)</a></li>
+<li><a href="#codeAction_resolve" id="toc-codeAction_resolve">Code
+Action Resolve Request (CR)</a></li>
+<li><a href="#textDocument_documentColor"
+id="toc-textDocument_documentColor">Document Color Request (CR)</a></li>
+<li><a href="#textDocument_colorPresentation"
+id="toc-textDocument_colorPresentation">Color Presentation Request
 (CR)</a></li>
-<li><a href="#document-color-request-cr"
-id="toc-document-color-request-cr">Document Color Request (CR)</a></li>
-<li><a href="#color-presentation-request-cr"
-id="toc-color-presentation-request-cr">Color Presentation Request
+<li><a href="#textDocument_formatting"
+id="toc-textDocument_formatting">Document Formatting Request
 (CR)</a></li>
-<li><a href="#document-formatting-request-cr"
-id="toc-document-formatting-request-cr">Document Formatting Request
+<li><a href="#textDocument_rangeFormatting"
+id="toc-textDocument_rangeFormatting">Document Range Formatting Request
 (CR)</a></li>
-<li><a href="#document-range-formatting-request-cr"
-id="toc-document-range-formatting-request-cr">Document Range Formatting
+<li><a href="#textDocument_onTypeFormatting"
+id="toc-textDocument_onTypeFormatting">Document on Type Formatting
 Request (CR)</a></li>
-<li><a href="#document-on-type-formatting-request-cr"
-id="toc-document-on-type-formatting-request-cr">Document on Type
-Formatting Request (CR)</a></li>
-<li><a href="#rename-request-cr" id="toc-rename-request-cr">Rename
+<li><a href="#textDocument_rename" id="toc-textDocument_rename">Rename
 Request (CR)</a></li>
-<li><a href="#prepare-rename-request-cr"
-id="toc-prepare-rename-request-cr">Prepare Rename Request (CR)</a></li>
-<li><a href="#linked-editing-rangecr"
-id="toc-linked-editing-rangecr">Linked Editing Range(CR)</a></li>
+<li><a href="#textDocument_prepareRename"
+id="toc-textDocument_prepareRename">Prepare Rename Request (CR)</a></li>
+<li><a href="#textDocument_linkedEditingRange"
+id="toc-textDocument_linkedEditingRange">Linked Editing
+Range(CR)</a></li>
 </ul></li>
-<li><a href="#workspace-features" id="toc-workspace-features">Workspace
+<li><a href="#workspaceFeatures" id="toc-workspaceFeatures">Workspace
 Features</a>
 <ul>
-<li><a href="#workspace-symbols-request-cr"
-id="toc-workspace-symbols-request-cr">Workspace Symbols Request
+<li><a href="#workspace_symbol" id="toc-workspace_symbol">Workspace
+Symbols Request (CR)</a></li>
+<li><a href="#workspace_symbolResolve"
+id="toc-workspace_symbolResolve">Workspace Symbol Resolve Request
 (CR)</a></li>
-<li><a href="#workspace-symbol-resolve-request-cr"
-id="toc-workspace-symbol-resolve-request-cr">Workspace Symbol Resolve
-Request (CR)</a></li>
-<li><a href="#configuration-request-sr"
-id="toc-configuration-request-sr">Configuration Request (SR)</a></li>
-<li><a href="#didchangeconfiguration-notification-sn"
-id="toc-didchangeconfiguration-notification-sn">DidChangeConfiguration
+<li><a href="#workspace_configuration"
+id="toc-workspace_configuration">Configuration Request (SR)</a></li>
+<li><a href="#workspace_didChangeConfiguration"
+id="toc-workspace_didChangeConfiguration">DidChangeConfiguration
 Notification (SN)</a></li>
-<li><a href="#workspace-folders-request-sr"
-id="toc-workspace-folders-request-sr">Workspace folders request
+<li><a href="#workspace_workspaceFolders"
+id="toc-workspace_workspaceFolders">Workspace folders request
 (SR)</a></li>
-<li><a href="#didchangeworkspacefolders-notification-sn"
-id="toc-didchangeworkspacefolders-notification-sn">DidChangeWorkspaceFolders
+<li><a href="#workspace_didChangeWorkspaceFolders"
+id="toc-workspace_didChangeWorkspaceFolders">DidChangeWorkspaceFolders
 Notification (SN)</a></li>
-<li><a href="#willcreatefiles-request-cr"
-id="toc-willcreatefiles-request-cr">WillCreateFiles Request
-(CR)</a></li>
-<li><a href="#didcreatefiles-notification-sn"
-id="toc-didcreatefiles-notification-sn">DidCreateFiles Notification
+<li><a href="#workspace_willCreateFiles"
+id="toc-workspace_willCreateFiles">WillCreateFiles Request (CR)</a></li>
+<li><a href="#workspace_didCreateFiles"
+id="toc-workspace_didCreateFiles">DidCreateFiles Notification
 (SN)</a></li>
-<li><a href="#willrenamefiles-request-cr"
-id="toc-willrenamefiles-request-cr">WillRenameFiles Request
-(CR)</a></li>
-<li><a href="#didrenamefiles-notification-sn"
-id="toc-didrenamefiles-notification-sn">DidRenameFiles Notification
+<li><a href="#workspace_willRenameFiles"
+id="toc-workspace_willRenameFiles">WillRenameFiles Request (CR)</a></li>
+<li><a href="#workspace_didRenameFiles"
+id="toc-workspace_didRenameFiles">DidRenameFiles Notification
 (SN)</a></li>
-<li><a href="#willdeletefiles-request-cr"
-id="toc-willdeletefiles-request-cr">WillDeleteFiles Request
-(CR)</a></li>
-<li><a href="#diddeletefiles-notification-sn"
-id="toc-diddeletefiles-notification-sn">DidDeleteFiles Notification
+<li><a href="#workspace_willDeleteFiles"
+id="toc-workspace_willDeleteFiles">WillDeleteFiles Request (CR)</a></li>
+<li><a href="#workspace_didDeleteFiles"
+id="toc-workspace_didDeleteFiles">DidDeleteFiles Notification
 (SN)</a></li>
-<li><a href="#didchangewatchedfiles-notification-sn"
-id="toc-didchangewatchedfiles-notification-sn">DidChangeWatchedFiles
+<li><a href="#workspace_didChangeWatchedFiles"
+id="toc-workspace_didChangeWatchedFiles">DidChangeWatchedFiles
 Notification (SN)</a></li>
-<li><a href="#execute-a-command-cr"
-id="toc-execute-a-command-cr">Execute a command (CR)</a></li>
-<li><a href="#applies-a-workspaceedit-sr"
-id="toc-applies-a-workspaceedit-sr">Applies a WorkspaceEdit
-(SR)</a></li>
+<li><a href="#workspace_executeCommand"
+id="toc-workspace_executeCommand">Execute a command (CR)</a></li>
+<li><a href="#workspace_applyEdit" id="toc-workspace_applyEdit">Applies
+a WorkspaceEdit (SR)</a></li>
 </ul></li>
-<li><a href="#window-features" id="toc-window-features">Window
+<li><a href="#windowFeatures" id="toc-windowFeatures">Window
 Features</a>
 <ul>
-<li><a href="#showmessage-notification-cn"
-id="toc-showmessage-notification-cn">ShowMessage Notification
-(CN)</a></li>
-<li><a href="#showmessage-request-sr"
-id="toc-showmessage-request-sr">ShowMessage Request (SR)</a></li>
-<li><a href="#show-document-request-sr"
-id="toc-show-document-request-sr">Show Document Request (SR)</a></li>
-<li><a href="#logmessage-notification-cn"
-id="toc-logmessage-notification-cn">LogMessage Notification
-(CN)</a></li>
-<li><a href="#create-work-done-progress-sr"
-id="toc-create-work-done-progress-sr">Create Work Done Progress
+<li><a href="#window_showMessage"
+id="toc-window_showMessage">ShowMessage Notification (CN)</a></li>
+<li><a href="#window_showMessageRequest"
+id="toc-window_showMessageRequest">ShowMessage Request (SR)</a></li>
+<li><a href="#window_showDocument" id="toc-window_showDocument">Show
+Document Request (SR)</a></li>
+<li><a href="#window_logMessage" id="toc-window_logMessage">LogMessage
+Notification (CN)</a></li>
+<li><a href="#window_workDoneProgress_create"
+id="toc-window_workDoneProgress_create">Create Work Done Progress
 (SR)</a></li>
-<li><a href="#cancel-a-work-done-progress-sn"
-id="toc-cancel-a-work-done-progress-sn">Cancel a Work Done Progress
+<li><a href="#window_workDoneProgress_cancel"
+id="toc-window_workDoneProgress_cancel">Cancel a Work Done Progress
 (SN)</a></li>
-<li><a href="#telemetry-notification-cn"
-id="toc-telemetry-notification-cn">Telemetry Notification (CN)</a></li>
+<li><a href="#telemetry_event" id="toc-telemetry_event">Telemetry
+Notification (CN)</a></li>
 <li><a href="#miscellaneous"
 id="toc-miscellaneous">Miscellaneous</a></li>
-<li><a href="#implementation-considerations-1"
-id="toc-implementation-considerations-1">Implementation
+<li><a href="#implementationConsiderations"
+id="toc-implementationConsiderations">Implementation
 Considerations</a></li>
-<li><a href="#meta-model" id="toc-meta-model">Meta Model</a></li>
+<li><a href="#metaModel" id="toc-metaModel">Meta Model</a></li>
 </ul></li>
-<li><a href="#change-log" id="toc-change-log">Change Log</a>
+<li><a href="#changeLog" id="toc-changeLog">Change Log</a>
 <ul>
-<li><a href="#section" id="toc-section">3.17.0 (05/10/2022)</a></li>
-<li><a href="#section-1" id="toc-section-1">3.16.0 (12/14/2020)</a></li>
-<li><a href="#section-2" id="toc-section-2">3.15.0 (01/14/2020)</a></li>
-<li><a href="#section-3" id="toc-section-3">3.14.0 (12/13/2018)</a></li>
-<li><a href="#section-4" id="toc-section-4">3.13.0 (9/11/2018)</a></li>
-<li><a href="#section-5" id="toc-section-5">3.12.0 (8/23/2018)</a></li>
-<li><a href="#section-6" id="toc-section-6">3.11.0 (8/21/2018)</a></li>
-<li><a href="#section-7" id="toc-section-7">3.10.0 (7/23/2018)</a></li>
-<li><a href="#section-8" id="toc-section-8">3.9.0 (7/10/2018)</a></li>
-<li><a href="#section-9" id="toc-section-9">3.8.0 (6/11/2018)</a></li>
-<li><a href="#section-10" id="toc-section-10">3.7.0 (4/5/2018)</a></li>
-<li><a href="#section-11" id="toc-section-11">3.6.0 (2/22/2018)</a></li>
-<li><a href="#section-12" id="toc-section-12">3.5.0</a></li>
-<li><a href="#section-13" id="toc-section-13">3.4.0
+<li><a href="#version_3_17_0" id="toc-version_3_17_0">3.17.0
+(05/10/2022)</a></li>
+<li><a href="#version_3_16_0" id="toc-version_3_16_0">3.16.0
+(12/14/2020)</a></li>
+<li><a href="#version_3_15_0" id="toc-version_3_15_0">3.15.0
+(01/14/2020)</a></li>
+<li><a href="#version_3_14_0" id="toc-version_3_14_0">3.14.0
+(12/13/2018)</a></li>
+<li><a href="#version_3_13_0" id="toc-version_3_13_0">3.13.0
+(9/11/2018)</a></li>
+<li><a href="#version_3_12_0" id="toc-version_3_12_0">3.12.0
+(8/23/2018)</a></li>
+<li><a href="#version_3_11_0" id="toc-version_3_11_0">3.11.0
+(8/21/2018)</a></li>
+<li><a href="#version_3_10_0" id="toc-version_3_10_0">3.10.0
+(7/23/2018)</a></li>
+<li><a href="#version_3_9_0" id="toc-version_3_9_0">3.9.0
+(7/10/2018)</a></li>
+<li><a href="#version_3_8_0" id="toc-version_3_8_0">3.8.0
+(6/11/2018)</a></li>
+<li><a href="#version_3_7_0" id="toc-version_3_7_0">3.7.0
+(4/5/2018)</a></li>
+<li><a href="#version_3_6_0" id="toc-version_3_6_0">3.6.0
+(2/22/2018)</a></li>
+<li><a href="#version_3_5_0" id="toc-version_3_5_0">3.5.0</a></li>
+<li><a href="#version_3_4_0" id="toc-version_3_4_0">3.4.0
 (11/27/2017)</a></li>
-<li><a href="#section-14" id="toc-section-14">3.3.0
+<li><a href="#version_3_3_0" id="toc-version_3_3_0">3.3.0
 (11/24/2017)</a></li>
-<li><a href="#section-15" id="toc-section-15">3.2.0
+<li><a href="#version_3_2_0" id="toc-version_3_2_0">3.2.0
 (09/26/2017)</a></li>
-<li><a href="#section-16" id="toc-section-16">3.1.0
+<li><a href="#version_3_1_0" id="toc-version_3_1_0">3.1.0
 (02/28/2017)</a></li>
-<li><a href="#version" id="toc-version">3.0 Version</a></li>
+<li><a href="#version_3_0_0" id="toc-version_3_0_0">3.0 Version</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -759,7 +749,7 @@ href="https://github.com/Microsoft/vscode-languageserver-node">here</a>.</p>
 <p><strong>Note:</strong> edits to this specification can be made via a
 pull request against this markdown <a
 href="https://github.com/Microsoft/language-server-protocol/blob/gh-pages/_specifications/lsp/3.17/specification.md">document</a>.</p>
-<h2 name="whatIsNew" id="whats-new-in-3.17">What's new in 3.17</h2>
+<h2 id="whatIsNew">What's new in 3.17</h2>
 <p>All new 3.17 features are tagged with a corresponding since version
 3.17 text or in JSDoc using <code>@since 3.17.0</code> annotation. Major
 new feature are: type hierarchy, inline values, inlay hints, notebook
@@ -772,11 +762,11 @@ specification release and to refer to their first appearance. Features
 in the spec are kept compatible using so called capability flags which
 are exchanged between the client and the server during
 initialization.</p>
-<h2 name="baseProtocol" id="base-protocol">Base Protocol</h2>
+<h2 id="baseProtocol">Base Protocol</h2>
 <p>The base protocol consists of a header and a content part (comparable
 to HTTP). The header and content part are<br />
 separated by a <code>\r\n</code>.</p>
-<h3 name="headerPart" id="header-part">Header Part</h3>
+<h3 id="headerPart">Header Part</h3>
 <p>The header part consists of header fields. Each header field is
 comprised of a name and a value, separated by ': ' (a colon and a
 space). The structure of header fields conforms to the <a
@@ -818,7 +808,7 @@ Defaults to application/vscode-jsonrpc; charset=utf-8</td>
 <p>{: .table .table-bordered .table-responsive}</p>
 <p>The header part is encoded using the 'ascii' encoding. This includes
 the <code>\r\n</code> separating the header and content part.</p>
-<h3 name="contentPart" id="content-part">Content Part</h3>
+<h3 id="contentPart">Content Part</h3>
 <p>Contains the actual content of the message. The content part of a
 message uses <a href="http://www.jsonrpc.org/">JSON-RPC</a> to describe
 requests, responses and notifications. The content part is encoded using
@@ -847,7 +837,7 @@ server treat the string <code>utf8</code> as <code>utf-8</code>.</p>
 structures</h3>
 <p>The following TypeScript definitions describe the base <a
 href="http://www.jsonrpc.org/specification">JSON-RPC protocol</a>:</p>
-<h4 name="baseTypes" id="base-types">Base Types</h4>
+<h4 id="baseTypes">Base Types</h4>
 <p>The protocol uses the following definitions for integers, unsigned
 integers, decimal numbers, objects and arrays:</p>
 <div class="anchorHolder">
@@ -909,7 +899,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb7-
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"> * </span><span class="an">@since</span><span class="co"> 3.17.0</span></span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"> */</span></span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="im">export type</span> LSPArray <span class="op">=</span> LSPAny[]<span class="op">;</span></span></code></pre></div>
-<h4 name="abstractMessage" id="abstract-message">Abstract Message</h4>
+<h4 id="abstractMessage">Abstract Message</h4>
 <p>A general message as defined by JSON-RPC. The language server
 protocol always uses "2.0" as the <code>jsonrpc</code> version.</p>
 <div class="anchorHolder">
@@ -919,7 +909,7 @@ protocol always uses "2.0" as the <code>jsonrpc</code> version.</p>
 class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">interface</span> Message {</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    jsonrpc<span class="op">:</span> <span class="dt">string</span><span class="op">;</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="requestMessage" id="request-message">Request Message</h4>
+<h4 id="requestMessage">Request Message</h4>
 <p>A request message to describe a request between the client and the
 server. Every processed request must send a response back to the sender
 of the request.</p>
@@ -941,7 +931,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb9-
 <span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>    params<span class="op">?:</span> array <span class="op">|</span> <span class="dt">object</span><span class="op">;</span></span>
 <span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="responseMessage" id="response-message">Response Message</h4>
+<h4 id="responseMessage">Response Message</h4>
 <p>A Response Message sent as a result of a request. If a request
 doesn't provide a result value the receiver of a request still needs to
 return a response message to conform to the JSON-RPC specification. The
@@ -1081,8 +1071,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb12
 <span id="cb12-89"><a href="#cb12-89" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb12-90"><a href="#cb12-90" aria-hidden="true" tabindex="-1"></a>    <span class="im">export</span> <span class="kw">const</span> lspReservedErrorRangeEnd<span class="op">:</span> integer <span class="op">=</span> <span class="op">-</span><span class="dv">32800</span><span class="op">;</span></span>
 <span id="cb12-91"><a href="#cb12-91" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="notificationMessage" id="notification-message">Notification
-Message</h4>
+<h4 id="notificationMessage">Notification Message</h4>
 <p>A notification message. A processed notification message must not
 send a response back. They work like events.</p>
 <div class="sourceCode" id="cb13"><pre
@@ -1097,8 +1086,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb13
 <span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    params<span class="op">?:</span> array <span class="op">|</span> <span class="dt">object</span><span class="op">;</span></span>
 <span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="dollarRequests" id="notifications-and-requests">$
-Notifications and Requests</h4>
+<h4 id="dollarRequests">$ Notifications and Requests</h4>
 <p>Notifications and requests whose methods start with '$/' are messages
 which are protocol implementation dependent and might not be
 implementable in all clients or servers. For example if the server
@@ -1109,8 +1097,7 @@ receives notifications starting with '$/' it is free to ignore the
 notification. If a server or client receives a request starting with
 '$/' it must error the request with error code
 <code>MethodNotFound</code> (e.g. <code>-32601</code>).</p>
-<h4 name="cancelRequest" id="cancellation-support-sn-cn">Cancellation
-Support (SN CN)</h4>
+<h4 id="cancelRequest">Cancellation Support (SN CN)</h4>
 <p>The base protocol offers support for request cancellation. To cancel
 a request, a notification message with the following properties is
 sent:</p>
@@ -1133,8 +1120,7 @@ response back. In addition it allows for returning partial results on
 cancel. If the request returns an error response on cancellation it is
 advised to set the error code to
 <code>ErrorCodes.RequestCancelled</code>.</p>
-<h4 name="progress" id="progress-support-sn-cn">Progress Support (SN
-CN)</h4>
+<h4 id="progress">Progress Support (SN CN)</h4>
 <blockquote>
 <p><em>Since version 3.15.0</em></p>
 </blockquote>
@@ -1166,8 +1152,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb16
 <p>Progress is reported against a token. The token is different than the
 request ID which allows to report progress out of band and also for
 notification.</p>
-<h2 name="languageServerProtocol" id="language-server-protocol">Language
-Server Protocol</h2>
+<h2 id="languageServerProtocol">Language Server Protocol</h2>
 <p>The language server protocol defines a set of JSON-RPC request,
 response and notification messages which are exchanged using the above
 base protocol. This section starts describing the basic JSON structures
@@ -1205,7 +1190,7 @@ messages.</p>
 is currently no support in the protocol to share one server between
 different tools. Such sharing would require additional protocol e.g. to
 lock a document to support concurrent editing.</p>
-<h3 name="capabilities" id="capabilities">Capabilities</h3>
+<h3 id="capabilities">Capabilities</h3>
 <p>Not every language server can support all features defined by the
 protocol. LSP therefore provides ‘capabilities’. A capability groups a
 set of language features. A development tool and the language server
@@ -1218,9 +1203,8 @@ that a server can compute textual edits to format the edited document
 before it is saved.</p>
 <p>The set of capabilities is exchanged between the client and server
 during the <a href="#initialize">initialize</a> request.</p>
-<h3 name="messageOrdering"
-id="request-notification-and-response-ordering">Request, Notification
-and Response Ordering</h3>
+<h3 id="messageOrdering">Request, Notification and Response
+Ordering</h3>
 <p>Responses to requests should be sent in roughly the same order as the
 requests appear on the server or client side. So for example if a server
 receives a <code>textDocument/completion</code> request and then a
@@ -1238,8 +1222,7 @@ hand, the server most likely should not reorder
 <code>textDocument/definition</code> and
 <code>textDocument/rename</code> requests, since executing the latter
 may affect the result of the former.</p>
-<h3 name="messageDocumentation" id="message-documentation">Message
-Documentation</h3>
+<h3 id="messageDocumentation">Message Documentation</h3>
 <p>As said LSP defines a set of requests, responses and notifications.
 Each of those are documented using the following format:</p>
 <ul>
@@ -1273,12 +1256,11 @@ are only specified if the protocol forces the use of certain error codes
 or messages. In cases where the server can decide on these values freely
 they aren't listed here.</li>
 </ul>
-<h3 name="basicJsonStructures" id="basic-json-structures">Basic JSON
-Structures</h3>
+<h3 id="basicJsonStructures">Basic JSON Structures</h3>
 <p>There are quite some JSON structures that are shared between
 different requests and notifications. Their structure and capabilities
 are documented in this section.</p>
-<h4 name="uri" id="uri">URI</h4>
+<h4 id="uri">URI</h4>
 <p>URI's are transferred as strings. The URI's format is defined in <a
 href="https://tools.ietf.org/html/rfc3986">https://tools.ietf.org/html/rfc3986</a></p>
 <pre><code>  foo://example.com:8042/over/there?name=ferret#nose
@@ -1321,7 +1303,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb21
 maps to a <code>string</code> as well.</p>
 <div class="sourceCode" id="cb22"><pre
 class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">type</span> URI <span class="op">=</span> <span class="dt">string</span><span class="op">;</span></span></code></pre></div>
-<h4 name="regExp" id="regular-expressions">Regular Expressions</h4>
+<h4 id="regExp">Regular Expressions</h4>
 <p>Regular expression are a powerful tool and there are actual use cases
 for them in the language server protocol. However the downside with them
 is that almost every programming language has its own set of regular
@@ -1409,7 +1391,7 @@ supported.</li>
 </ul>
 <p>The only regular expression flag that a client needs to support is
 'i' to specify a case insensitive search.</p>
-<h4 name="enumerations" id="enumerations">Enumerations</h4>
+<h4 id="enumerations">Enumerations</h4>
 <p>The protocol supports two kind of enumerations: (a) integer based
 enumerations and (b) string based enumerations. Integer based
 enumerations usually start with <code>1</code>. The ones that don't are
@@ -1429,7 +1411,7 @@ future version of the specification an additional completion item kind
 with the value <code>n</code> gets added and announced by a client an
 (older) server not knowing about the value should not fail but simply
 ignore the value as a usable item kind.</p>
-<h4 name="textDocuments" id="text-documents">Text Documents</h4>
+<h4 id="textDocuments">Text Documents</h4>
 <p>The current protocol is tailored for textual documents whose content
 can be represented as a string. There is currently no support for binary
 documents. A position inside a document (see Position definition below)
@@ -1469,7 +1451,7 @@ agnostic. So you can not specify a position that denotes
 the character offset.</p>
 <div class="sourceCode" id="cb24"><pre
 class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">const</span> EOL<span class="op">:</span> <span class="dt">string</span>[] <span class="op">=</span> [<span class="st">&#39;</span><span class="sc">\n</span><span class="st">&#39;</span><span class="op">,</span> <span class="vs">`</span><span class="sc">\r\n</span><span class="vs">`</span><span class="op">,</span> <span class="st">&#39;</span><span class="sc">\r</span><span class="st">&#39;</span>]<span class="op">;</span></span></code></pre></div>
-<h4 name="position" id="position">Position</h4>
+<h4 id="position">Position</h4>
 <p>Position in a text document expressed as zero-based line and
 zero-based character offset. A position is between two characters like
 an 'insert' cursor in an editor. Special values like for example
@@ -1535,7 +1517,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb26
 <span id="cb26-35"><a href="#cb26-35" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb26-36"><a href="#cb26-36" aria-hidden="true" tabindex="-1"></a>    <span class="im">export</span> <span class="kw">const</span> UTF32<span class="op">:</span> PositionEncodingKind <span class="op">=</span> <span class="st">&#39;utf-32&#39;</span><span class="op">;</span></span>
 <span id="cb26-37"><a href="#cb26-37" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="range" id="range">Range</h4>
+<h4 id="range">Range</h4>
 <p>A range in a text document expressed as (zero-based) start and end
 positions. A range is comparable to a selection in an editor. Therefore,
 the end position is exclusive. If you want to specify a range that
@@ -1558,7 +1540,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb28
 <span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>    end<span class="op">:</span> <span class="bu">Position</span><span class="op">;</span></span>
 <span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="textDocumentItem" id="textdocumentitem">TextDocumentItem</h4>
+<h4 id="textDocumentItem">TextDocumentItem</h4>
 <p>An item to transfer a text document from the client to the
 server.</p>
 <div class="sourceCode" id="cb29"><pre
@@ -1821,8 +1803,7 @@ those ids.</p>
 </tbody>
 </table>
 <p>{: .table .table-bordered .table-responsive}</p>
-<h4 name="textDocumentIdentifier"
-id="textdocumentidentifier">TextDocumentIdentifier</h4>
+<h4 id="textDocumentIdentifier">TextDocumentIdentifier</h4>
 <p>Text documents are identified using a URI. On the protocol level,
 URIs are passed as strings. The corresponding JSON structure looks like
 this:</p>
@@ -1833,8 +1814,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb30
 <span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    uri<span class="op">:</span> DocumentUri<span class="op">;</span></span>
 <span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="versionedTextDocumentIdentifier"
-id="versionedtextdocumentidentifier">VersionedTextDocumentIdentifier</h4>
+<h4
+id="versionedTextDocumentIdentifier">VersionedTextDocumentIdentifier</h4>
 <p>An identifier to denote a specific version of a text document. This
 information usually flows from the client to the server.</p>
 <div class="sourceCode" id="cb31"><pre
@@ -1868,8 +1849,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb32
 <span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>    version<span class="op">:</span> integer <span class="op">|</span> <span class="dt">null</span><span class="op">;</span></span>
 <span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="textDocumentPositionParams"
-id="textdocumentpositionparams">TextDocumentPositionParams</h4>
+<h4 id="textDocumentPositionParams">TextDocumentPositionParams</h4>
 <p>Was <code>TextDocumentPosition</code> in 1.0 with inlined
 parameters.</p>
 <p>A parameter literal used in requests to pass a text document and a
@@ -1890,7 +1870,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb33
 <span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>    position<span class="op">:</span> <span class="bu">Position</span><span class="op">;</span></span>
 <span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="documentFilter" id="documentfilter">DocumentFilter</h4>
+<h4 id="documentFilter">DocumentFilter</h4>
 <p>A document filter denotes a document through properties like
 <code>language</code>, <code>scheme</code> or <code>pattern</code>. An
 example is a filter that applies to TypeScript files on disk. Another
@@ -1939,8 +1919,7 @@ filters.</p>
 </div>
 <div class="sourceCode" id="cb36"><pre
 class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="im">export type</span> DocumentSelector <span class="op">=</span> DocumentFilter[]<span class="op">;</span></span></code></pre></div>
-<h4 name="textEdit" id="textedit-annotatedtextedit">TextEdit &amp;
-AnnotatedTextEdit</h4>
+<h4 id="textEdit">TextEdit &amp; AnnotatedTextEdit</h4>
 <blockquote>
 <p>New in version 3.16: Support for <code>AnnotatedTextEdit</code>.</p>
 </blockquote>
@@ -2025,7 +2004,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb40
 <span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>    annotationId<span class="op">:</span> ChangeAnnotationIdentifier<span class="op">;</span></span>
 <span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="textEditArray" id="textedit">TextEdit[]</h4>
+<h4 id="textEditArray">TextEdit[]</h4>
 <p>Complex text manipulations are described with an array of
 <code>TextEdit</code>'s or <code>AnnotatedTextEdit</code>'s,
 representing a single change to the document.</p>
@@ -2038,7 +2017,7 @@ start position: multiple inserts, or any number of inserts followed by a
 single remove or replace edit. If multiple inserts have the same
 position, the order in the array defines the order in which the inserted
 strings appear in the resulting text.</p>
-<h4 name="textDocumentEdit" id="textdocumentedit">TextDocumentEdit</h4>
+<h4 id="textDocumentEdit">TextDocumentEdit</h4>
 <blockquote>
 <p>New in version 3.16: support for <code>AnnotatedTextEdit</code>. The
 support is guarded by the client capability
@@ -2070,7 +2049,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb41
 <span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a>    edits<span class="op">:</span> (TextEdit <span class="op">|</span> AnnotatedTextEdit)[]<span class="op">;</span></span>
 <span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="location" id="location">Location</h4>
+<h4 id="location">Location</h4>
 <p>Represents a location inside a resource, such as a line inside a text
 file.</p>
 <div class="sourceCode" id="cb42"><pre
@@ -2078,7 +2057,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb42
 <span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>    uri<span class="op">:</span> DocumentUri<span class="op">;</span></span>
 <span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>    range<span class="op">:</span> <span class="bu">Range</span><span class="op">;</span></span>
 <span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="locationLink" id="locationlink">LocationLink</h4>
+<h4 id="locationLink">LocationLink</h4>
 <p>Represents a link between a source and a target location.</p>
 <div class="sourceCode" id="cb43"><pre
 class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="kw">interface</span> LocationLink {</span>
@@ -2111,7 +2090,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb43
 <span id="cb43-28"><a href="#cb43-28" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb43-29"><a href="#cb43-29" aria-hidden="true" tabindex="-1"></a>    targetSelectionRange<span class="op">:</span> <span class="bu">Range</span><span class="op">;</span></span>
 <span id="cb43-30"><a href="#cb43-30" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="diagnostic" id="diagnostic">Diagnostic</h4>
+<h4 id="diagnostic">Diagnostic</h4>
 <p>Represents a diagnostic, such as a compiler error or warning.
 Diagnostic objects are only valid in the scope of a resource.</p>
 <div class="sourceCode" id="cb44"><pre
@@ -2263,7 +2242,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb48
 <span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a>    href<span class="op">:</span> URI<span class="op">;</span></span>
 <span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="command" id="command">Command</h4>
+<h4 id="command">Command</h4>
 <p>Represents a reference to a command. Provides a title which will be
 used to represent a command in the UI. Commands are identified by a
 string identifier. The recommended way to handle commands is to
@@ -2287,7 +2266,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb49
 <span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a>    arguments<span class="op">?:</span> LSPAny[]<span class="op">;</span></span>
 <span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="markupContent" id="markupcontent">MarkupContent</h4>
+<h4 id="markupContent">MarkupContent</h4>
 <p>A <code>MarkupContent</code> literal represents a string value which
 content can be represented in different formats. Currently
 <code>plaintext</code> and <code>markdown</code> are supported formats.
@@ -2417,8 +2396,7 @@ Documentation</a></td>
 </tr>
 </tbody>
 </table>
-<h3 name="resourceChanges" id="file-resource-changes">File Resource
-changes</h3>
+<h3 id="resourceChanges">File Resource changes</h3>
 <blockquote>
 <p>New in version 3.13. Since version 3.16 file resource changes can
 carry an additional property <code>changeAnnotation</code> to describe
@@ -2581,7 +2559,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb58
 <span id="cb58-24"><a href="#cb58-24" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb58-25"><a href="#cb58-25" aria-hidden="true" tabindex="-1"></a>    annotationId<span class="op">?:</span> ChangeAnnotationIdentifier<span class="op">;</span></span>
 <span id="cb58-26"><a href="#cb58-26" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="workspaceEdit" id="workspaceedit">WorkspaceEdit</h4>
+<h4 id="workspaceEdit">WorkspaceEdit</h4>
 <p>A workspace edit represents changes to many resources managed in the
 workspace. The edit should either provide <code>changes</code> or
 <code>documentChanges</code>. If the client can handle versioned
@@ -2638,8 +2616,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb59
 <span id="cb59-38"><a href="#cb59-38" aria-hidden="true" tabindex="-1"></a>        [id<span class="op">:</span> <span class="dt">string</span> <span class="co">/* ChangeAnnotationIdentifier */</span>]<span class="op">:</span> ChangeAnnotation<span class="op">;</span></span>
 <span id="cb59-39"><a href="#cb59-39" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
 <span id="cb59-40"><a href="#cb59-40" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h5 name="workspaceEditClientCapabilities"
-id="workspaceeditclientcapabilities">WorkspaceEditClientCapabilities</h5>
+<h5
+id="workspaceEditClientCapabilities">WorkspaceEditClientCapabilities</h5>
 <blockquote>
 <p>New in version 3.13: <code>ResourceOperationKind</code> and
 <code>FailureHandlingKind</code> and the client capability
@@ -2766,8 +2744,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb62
 <span id="cb62-31"><a href="#cb62-31" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb62-32"><a href="#cb62-32" aria-hidden="true" tabindex="-1"></a>    <span class="im">export</span> <span class="kw">const</span> Undo<span class="op">:</span> FailureHandlingKind <span class="op">=</span> <span class="st">&#39;undo&#39;</span><span class="op">;</span></span>
 <span id="cb62-33"><a href="#cb62-33" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="workDoneProgress" id="work-done-progress">Work Done
-Progress</h4>
+<h4 id="workDoneProgress">Work Done Progress</h4>
 <blockquote>
 <p><em>Since version 3.15.0</em></p>
 </blockquote>
@@ -2775,8 +2752,7 @@ Progress</h4>
 href="#progress"><code>$/progress</code></a> notification. The value
 payload of a work done progress notification can be of three different
 forms.</p>
-<h5 name="workDoneProgressBegin" id="work-done-progress-begin">Work Done
-Progress Begin</h5>
+<h5 id="workDoneProgressBegin">Work Done Progress Begin</h5>
 <p>To start progress reporting a <code>$/progress</code> notification
 with the following payload must be sent:</p>
 <div class="sourceCode" id="cb63"><pre
@@ -2818,8 +2794,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb63
 <span id="cb63-36"><a href="#cb63-36" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb63-37"><a href="#cb63-37" aria-hidden="true" tabindex="-1"></a>    percentage<span class="op">?:</span> uinteger<span class="op">;</span></span>
 <span id="cb63-38"><a href="#cb63-38" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h5 name="workDoneProgressReport" id="work-done-progress-report">Work
-Done Progress Report</h5>
+<h5 id="workDoneProgressReport">Work Done Progress Report</h5>
 <p>Reporting progress is done using the following payload:</p>
 <div class="sourceCode" id="cb64"><pre
 class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">interface</span> WorkDoneProgressReport {</span>
@@ -2854,8 +2829,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb64
 <span id="cb64-30"><a href="#cb64-30" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb64-31"><a href="#cb64-31" aria-hidden="true" tabindex="-1"></a>    percentage<span class="op">?:</span> uinteger<span class="op">;</span></span>
 <span id="cb64-32"><a href="#cb64-32" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h5 name="workDoneProgressEnd" id="work-done-progress-end">Work Done
-Progress End</h5>
+<h5 id="workDoneProgressEnd">Work Done Progress End</h5>
 <p>Signaling the end of a progress reporting is done using the following
 payload:</p>
 <div class="sourceCode" id="cb65"><pre
@@ -2869,8 +2843,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb65
 <span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb65-9"><a href="#cb65-9" aria-hidden="true" tabindex="-1"></a>    message<span class="op">?:</span> <span class="dt">string</span><span class="op">;</span></span>
 <span id="cb65-10"><a href="#cb65-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h5 name="initiatingWorkDoneProgress"
-id="initiating-work-done-progress">Initiating Work Done Progress</h5>
+<h5 id="initiatingWorkDoneProgress">Initiating Work Done Progress</h5>
 <p>Work Done progress can be initiated in two different ways:</p>
 <ol type="1">
 <li>by the sender of a request (mostly clients) using the predefined
@@ -2881,8 +2854,7 @@ progress.</li>
 <code>window/workDoneProgress/create</code>. The document will refer to
 this kind of progress as server initiated progress.</li>
 </ol>
-<h6 name="clientInitiatedProgress" id="client-initiated-progress">Client
-Initiated Progress</h6>
+<h6 id="clientInitiatedProgress">Client Initiated Progress</h6>
 <p>Consider a client sending a <code>textDocument/reference</code>
 request to a server and the client accepts work done progress reporting
 on that request. To signal this to the server the client would add a
@@ -2962,8 +2934,7 @@ like this:</p>
 class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">interface</span> WorkDoneProgressOptions {</span>
 <span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>    workDoneProgress<span class="op">?:</span> <span class="dt">boolean</span><span class="op">;</span></span>
 <span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h6 name="serverInitiatedProgress" id="server-initiated-progress">Server
-Initiated Progress</h6>
+<h6 id="serverInitiatedProgress">Server Initiated Progress</h6>
 <p>Servers can also initiate progress reporting using the
 <code>window/workDoneProgress/create</code> request. This is useful if
 the server needs to report progress outside of a request (for example
@@ -2987,8 +2958,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb71
 <span id="cb71-8"><a href="#cb71-8" aria-hidden="true" tabindex="-1"></a><span class="co">         */</span></span>
 <span id="cb71-9"><a href="#cb71-9" aria-hidden="true" tabindex="-1"></a>        workDoneProgress<span class="op">?:</span> <span class="dt">boolean</span><span class="op">;</span></span>
 <span id="cb71-10"><a href="#cb71-10" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span></code></pre></div>
-<h4 name="partialResults" id="partial-result-progress">Partial Result
-Progress</h4>
+<h4 id="partialResults">Partial Result Progress</h4>
 <blockquote>
 <p><em>Since version 3.15.0</em></p>
 </blockquote>
@@ -3039,8 +3009,7 @@ the request got canceled and may be incomplete.</li>
 <li>in all other cases the provided partial results shouldn't be
 used.</li>
 </ul>
-<h4 name="partialResultParams"
-id="partialresultparams">PartialResultParams</h4>
+<h4 id="partialResultParams">PartialResultParams</h4>
 <p>A parameter literal used to pass a partial result token.</p>
 <div class="sourceCode" id="cb73"><pre
 class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">interface</span> PartialResultParams {</span>
@@ -3050,7 +3019,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb73
 <span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb73-6"><a href="#cb73-6" aria-hidden="true" tabindex="-1"></a>    partialResultToken<span class="op">?:</span> ProgressToken<span class="op">;</span></span>
 <span id="cb73-7"><a href="#cb73-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="traceValue" id="tracevalue">TraceValue</h4>
+<h4 id="traceValue">TraceValue</h4>
 <p>A <code>TraceValue</code> represents the level of verbosity with
 which the server systematically reports its execution trace using <a
 href="#logTrace">$/logTrace</a> notifications.<br />
@@ -3059,13 +3028,12 @@ be modified later using the <a href="#setTrace">$/setTrace</a>
 notification.</p>
 <div class="sourceCode" id="cb74"><pre
 class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="im">export type</span> TraceValue <span class="op">=</span> <span class="st">&#39;off&#39;</span> <span class="op">|</span> <span class="st">&#39;messages&#39;</span> <span class="op">|</span> <span class="st">&#39;verbose&#39;</span><span class="op">;</span></span></code></pre></div>
-<h3 name="lifeCycleMessages" id="server-lifecycle">Server lifecycle</h3>
+<h3 id="lifeCycleMessages">Server lifecycle</h3>
 <p>The current protocol specification defines that the lifecycle of a
 server is managed by the client (e.g. a tool like VS Code or Emacs). It
 is up to the client to decide when to start (process-wise) and when to
 shutdown a server.</p>
-<h4 name="initialize" id="initialize-request-cr">Initialize Request
-(CR)</h4>
+<h4 id="initialize">Initialize Request (CR)</h4>
 <p>The initialize request is sent as the first request from the client
 to the server. If the server receives a request or notification before
 the <code>initialize</code> request it should act as follows:</p>
@@ -4021,8 +3989,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb82
 <span id="cb82-281"><a href="#cb82-281" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb82-282"><a href="#cb82-282" aria-hidden="true" tabindex="-1"></a>    experimental<span class="op">?:</span> LSPAny<span class="op">;</span></span>
 <span id="cb82-283"><a href="#cb82-283" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="initialized" id="initialized-notification-sn">Initialized
-Notification (SN)</h4>
+<h4 id="initialized">Initialized Notification (SN)</h4>
 <p>The initialized notification is sent from the client to the server
 after the client received the result of the <code>initialize</code>
 request but before the client is sending any other request or
@@ -4038,8 +4005,7 @@ only be sent once.</p>
 <div class="sourceCode" id="cb83"><pre
 class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="kw">interface</span> InitializedParams {</span>
 <span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="client_registerCapability"
-id="register-capability-sr">Register Capability (SR)</h4>
+<h4 id="client_registerCapability">Register Capability (SR)</h4>
 <p>The <code>client/registerCapability</code> request is sent from the
 server to the client to register for a new capability on the client
 side. Not all clients need to support dynamic capability registration. A
@@ -4156,8 +4122,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb88
 <span id="cb88-8"><a href="#cb88-8" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb88-9"><a href="#cb88-9" aria-hidden="true" tabindex="-1"></a>    documentSelector<span class="op">:</span> DocumentSelector <span class="op">|</span> <span class="dt">null</span><span class="op">;</span></span>
 <span id="cb88-10"><a href="#cb88-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="client_unregisterCapability"
-id="unregister-capability-sr">Unregister Capability (SR)</h4>
+<h4 id="client_unregisterCapability">Unregister Capability (SR)</h4>
 <p>The <code>client/unregisterCapability</code> request is sent from the
 server to the client to unregister a previously registered
 capability.</p>
@@ -4216,8 +4181,7 @@ class="sourceCode json"><code class="sourceCode json"><span id="cb91-1"><a href=
 <li>error: code and message set in case an exception happens during the
 request.</li>
 </ul>
-<h4 name="setTrace" id="settrace-notification-sn">SetTrace Notification
-(SN)</h4>
+<h4 id="setTrace">SetTrace Notification (SN)</h4>
 <p>A notification that should be used by the client to modify the trace
 setting of the server.</p>
 <p><em>Notification</em>:</p>
@@ -4232,8 +4196,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb92
 <span id="cb92-4"><a href="#cb92-4" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb92-5"><a href="#cb92-5" aria-hidden="true" tabindex="-1"></a>    value<span class="op">:</span> TraceValue<span class="op">;</span></span>
 <span id="cb92-6"><a href="#cb92-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="logTrace" id="logtrace-notification-cn">LogTrace Notification
-(CN)</h4>
+<h4 id="logTrace">LogTrace Notification (CN)</h4>
 <p>A notification to log the trace of the server's execution.<br />
 The amount and content of these notifications depends on the current
 <code>trace</code> configuration.<br />
@@ -4263,7 +4226,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb93
 <span id="cb93-9"><a href="#cb93-9" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb93-10"><a href="#cb93-10" aria-hidden="true" tabindex="-1"></a>    verbose<span class="op">?:</span> <span class="dt">string</span><span class="op">;</span></span>
 <span id="cb93-11"><a href="#cb93-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="shutdown" id="shutdown-request-cr">Shutdown Request (CR)</h4>
+<h4 id="shutdown">Shutdown Request (CR)</h4>
 <p>The shutdown request is sent from the client to the server. It asks
 the server to shut down, but to not exit (otherwise the response might
 not be delivered correctly to the client). There is a separate exit
@@ -4285,7 +4248,7 @@ should error with <code>InvalidRequest</code>.</p>
 <li>error: code and message set in case an exception happens during
 shutdown request.</li>
 </ul>
-<h4 name="exit" id="exit-notification-sn">Exit Notification (SN)</h4>
+<h4 id="exit">Exit Notification (SN)</h4>
 <p>A notification to ask the server to exit its process.<br />
 The server should exit with <code>success</code> code 0 if the shutdown
 request has been received before; otherwise with <code>error</code> code
@@ -4295,8 +4258,7 @@ request has been received before; otherwise with <code>error</code> code
 <li>method: 'exit'</li>
 <li>params: none</li>
 </ul>
-<h3 name="textDocument_synchronization"
-id="text-document-synchronization">Text Document Synchronization</h3>
+<h3 id="textDocument_synchronization">Text Document Synchronization</h3>
 <p>Client support for <code>textDocument/didOpen</code>,
 <code>textDocument/didChange</code> and
 <code>textDocument/didClose</code> notifications is mandatory in the
@@ -4377,9 +4339,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb95
 <span id="cb95-13"><a href="#cb95-13" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb95-14"><a href="#cb95-14" aria-hidden="true" tabindex="-1"></a>    change<span class="op">?:</span> TextDocumentSyncKind<span class="op">;</span></span>
 <span id="cb95-15"><a href="#cb95-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="textDocument_didOpen"
-id="didopentextdocument-notification-sn">DidOpenTextDocument
-Notification (SN)</h4>
+<h4 id="textDocument_didOpen">DidOpenTextDocument Notification (SN)</h4>
 <p>The document open notification is sent from the client to the server
 to signal newly opened text documents. The document's content is now
 managed by the client and the server must not try to read the document's
@@ -4420,9 +4380,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb96
 <span id="cb96-4"><a href="#cb96-4" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb96-5"><a href="#cb96-5" aria-hidden="true" tabindex="-1"></a>    textDocument<span class="op">:</span> TextDocumentItem<span class="op">;</span></span>
 <span id="cb96-6"><a href="#cb96-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="textDocument_didChange"
-id="didchangetextdocument-notification-sn">DidChangeTextDocument
-Notification (SN)</h4>
+<h4 id="textDocument_didChange">DidChangeTextDocument Notification
+(SN)</h4>
 <p>The document change notification is sent from the client to the
 server to signal changes to a text document. Before a client can change
 a text document it must claim ownership of its content using the
@@ -4562,9 +4521,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb99
 <span id="cb99-25"><a href="#cb99-25" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb99-26"><a href="#cb99-26" aria-hidden="true" tabindex="-1"></a>    text<span class="op">:</span> <span class="dt">string</span><span class="op">;</span></span>
 <span id="cb99-27"><a href="#cb99-27" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code></pre></div>
-<h4 name="textDocument_willSave"
-id="willsavetextdocument-notification-sn">WillSaveTextDocument
-Notification (SN)</h4>
+<h4 id="textDocument_willSave">WillSaveTextDocument Notification
+(SN)</h4>
 <p>The document will save notification is sent from the client to the
 server before the document is actually saved. If a server has registered
 for open / close events clients should ensure that the document is open
@@ -4639,8 +4597,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb10
 <span id="cb101-21"><a href="#cb101-21" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb101-22"><a href="#cb101-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb101-23"><a href="#cb101-23" aria-hidden="true" tabindex="-1"></a><span class="im">export type</span> TextDocumentSaveReason <span class="op">=</span> <span class="dv">1</span> <span class="op">|</span> <span class="dv">2</span> <span class="op">|</span> <span class="dv">3</span><span class="op">;</span></span></code></pre></div>
-<h4 name="textDocument_willSaveWaitUntil"
-id="willsavewaituntiltextdocument-request-cr">WillSaveWaitUntilTextDocument
+<h4 id="textDocument_willSaveWaitUntil">WillSaveWaitUntilTextDocument
 Request (CR)</h4>
 <p>The document will save request is sent from the client to the server
 before the document is actually saved. The request can return an array
@@ -4682,9 +4639,7 @@ transferal.</p>
 <li>error: code and message set in case an exception happens during the
 <code>textDocument/willSaveWaitUntil</code> request.</li>
 </ul>
-<h4 name="textDocument_didSave"
-id="didsavetextdocument-notification-sn">DidSaveTextDocument
-Notification (SN)</h4>
+<h4 id="textDocument_didSave">DidSaveTextDocument Notification (SN)</h4>
 <p>The document save notification is sent from the client to the server
 when the document was saved in the client.</p>
 <p><em>Client Capability</em>:</p>
@@ -4748,9 +4703,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb10
 <span id="cb104-10"><a href="#cb104-10" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb104-11"><a href="#cb104-11" aria-hidden="true" tabindex="-1"></a>    text<span class="op">?:</span> <span class="dt">string</span><span class="op">;</span></span>
 <span id="cb104-12"><a href="#cb104-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="textDocument_didClose"
-id="didclosetextdocument-notification-sn">DidCloseTextDocument
-Notification (SN)</h4>
+<h4 id="textDocument_didClose">DidCloseTextDocument Notification
+(SN)</h4>
 <p>The document close notification is sent from the client to the server
 when the document got closed in the client. The document's master now
 exists where the document's Uri points to (e.g. if the document's Uri is
@@ -4785,8 +4739,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb10
 <span id="cb105-4"><a href="#cb105-4" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb105-5"><a href="#cb105-5" aria-hidden="true" tabindex="-1"></a>    textDocument<span class="op">:</span> TextDocumentIdentifier<span class="op">;</span></span>
 <span id="cb105-6"><a href="#cb105-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="textDocument_didRename" id="renaming-a-document">Renaming a
-document</h4>
+<h4 id="textDocument_didRename">Renaming a document</h4>
 <p>Document renames should be signaled to a server sending a document
 close notification with the document's old name followed by an open
 notification using the document's new name. Major reason is that besides
@@ -4862,8 +4815,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb10
 <span id="cb107-27"><a href="#cb107-27" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb107-28"><a href="#cb107-28" aria-hidden="true" tabindex="-1"></a>    save<span class="op">?:</span> <span class="dt">boolean</span> <span class="op">|</span> SaveOptions<span class="op">;</span></span>
 <span id="cb107-29"><a href="#cb107-29" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h3 name="notebookDocument_synchronization"
-id="notebook-document-synchronization">Notebook Document
+<h3 id="notebookDocument_synchronization">Notebook Document
 Synchronization</h3>
 <p>Notebooks are becoming more and more popular. Adding support for them
 to the language server protocol allows notebook editors to reuse
@@ -5259,9 +5211,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb12
 <span id="cb120-6"><a href="#cb120-6" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">interface</span> NotebookDocumentSyncRegistrationOptions <span class="kw">extends</span></span>
 <span id="cb120-7"><a href="#cb120-7" aria-hidden="true" tabindex="-1"></a>    NotebookDocumentSyncOptions<span class="op">,</span> StaticRegistrationOptions {</span>
 <span id="cb120-8"><a href="#cb120-8" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="notebookDocument_didOpen"
-id="didopennotebookdocument-notification-sn">DidOpenNotebookDocument
-Notification (SN)</h4>
+<h4 id="notebookDocument_didOpen">DidOpenNotebookDocument Notification
+(SN)</h4>
 <p>The open notification is sent from the client to the server when a
 notebook document is opened. It is only sent by a client if the server
 requested the synchronization mode <code>notebook</code> in its
@@ -5294,8 +5245,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb12
 <span id="cb121-16"><a href="#cb121-16" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb121-17"><a href="#cb121-17" aria-hidden="true" tabindex="-1"></a>    cellTextDocuments<span class="op">:</span> TextDocumentItem[]<span class="op">;</span></span>
 <span id="cb121-18"><a href="#cb121-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="notebookDocument_didChange"
-id="didchangenotebookdocument-notification-sn">DidChangeNotebookDocument
+<h4 id="notebookDocument_didChange">DidChangeNotebookDocument
 Notification (SN)</h4>
 <p>The change notification is sent from the client to the server when a
 notebook document changes. It is only sent by a client if the server
@@ -5441,9 +5391,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb12
 <span id="cb125-20"><a href="#cb125-20" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb125-21"><a href="#cb125-21" aria-hidden="true" tabindex="-1"></a>    cells<span class="op">?:</span> NotebookCell[]<span class="op">;</span></span>
 <span id="cb125-22"><a href="#cb125-22" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="notebookDocument_didSave"
-id="didsavenotebookdocument-notification-sn">DidSaveNotebookDocument
-Notification (SN)</h4>
+<h4 id="notebookDocument_didSave">DidSaveNotebookDocument Notification
+(SN)</h4>
 <p>The save notification is sent from the client to the server when a
 notebook document is saved. It is only sent by a client if the server
 requested the synchronization mode <code>notebook</code> in its
@@ -5472,9 +5421,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb12
 <span id="cb126-9"><a href="#cb126-9" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb126-10"><a href="#cb126-10" aria-hidden="true" tabindex="-1"></a>    notebookDocument<span class="op">:</span> NotebookDocumentIdentifier<span class="op">;</span></span>
 <span id="cb126-11"><a href="#cb126-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="notebookDocument_didClose"
-id="didclosenotebookdocument-notification-sn">DidCloseNotebookDocument
-Notification (SN)</h4>
+<h4 id="notebookDocument_didClose">DidCloseNotebookDocument Notification
+(SN)</h4>
 <p>The close notification is sent from the client to the server when a
 notebook document is closed. It is only sent by a client if the server
 requested the synchronization mode <code>notebook</code> in its
@@ -5525,8 +5473,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb12
 <span id="cb128-9"><a href="#cb128-9" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb128-10"><a href="#cb128-10" aria-hidden="true" tabindex="-1"></a>    uri<span class="op">:</span> URI<span class="op">;</span></span>
 <span id="cb128-11"><a href="#cb128-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h3 name="languageFeatures" id="language-features">Language
-Features</h3>
+<h3 id="languageFeatures">Language Features</h3>
 <p>Language Features provide the actual smarts in the language server
 protocol. They are usually executed on a [text document, position]
 tuple. The main language feature categories are:</p>
@@ -5538,8 +5485,7 @@ actions.</li>
 <p>The language features should be computed on the <a
 href="#textDocument_synchronization">synchronized state</a> of the
 document.</p>
-<h4 name="textDocument_declaration"
-id="goto-declaration-request-cr">Goto Declaration Request (CR)</h4>
+<h4 id="textDocument_declaration">Goto Declaration Request (CR)</h4>
 <blockquote>
 <p><em>Since version 3.14.0</em></p>
 </blockquote>
@@ -5618,8 +5564,7 @@ href="#locationLink"><code>LocationLink</code></a>[]</li>
 <li>error: code and message set in case an exception happens during the
 declaration request.</li>
 </ul>
-<h4 name="textDocument_definition" id="goto-definition-request-cr">Goto
-Definition Request (CR)</h4>
+<h4 id="textDocument_definition">Goto Definition Request (CR)</h4>
 <p>The go to definition request is sent from the client to the server to
 resolve the definition location of a symbol at a given text document
 position.</p>
@@ -5694,8 +5639,7 @@ href="#locationLink"><code>LocationLink</code></a>[]</li>
 <li>error: code and message set in case an exception happens during the
 definition request.</li>
 </ul>
-<h4 name="textDocument_typeDefinition"
-id="goto-type-definition-request-cr">Goto Type Definition Request
+<h4 id="textDocument_typeDefinition">Goto Type Definition Request
 (CR)</h4>
 <blockquote>
 <p><em>Since version 3.6.0</em></p>
@@ -5779,8 +5723,7 @@ href="#locationLink"><code>LocationLink</code></a>[]</li>
 <li>error: code and message set in case an exception happens during the
 definition request.</li>
 </ul>
-<h4 name="textDocument_implementation"
-id="goto-implementation-request-cr">Goto Implementation Request
+<h4 id="textDocument_implementation">Goto Implementation Request
 (CR)</h4>
 <blockquote>
 <p><em>Since version 3.6.0</em></p>
@@ -5864,8 +5807,7 @@ href="#locationLink"><code>LocationLink</code></a>[]</li>
 <li>error: code and message set in case an exception happens during the
 definition request.</li>
 </ul>
-<h4 name="textDocument_references" id="find-references-request-cr">Find
-References Request (CR)</h4>
+<h4 id="textDocument_references">Find References Request (CR)</h4>
 <p>The references request is sent from the client to the server to
 resolve project-wide references for the symbol denoted by the given text
 document position.</p>
@@ -5937,9 +5879,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb14
 <li>error: code and message set in case an exception happens during the
 reference request.</li>
 </ul>
-<h4 name="textDocument_prepareCallHierarchy"
-id="prepare-call-hierarchy-request-cr">Prepare Call Hierarchy Request
-(CR)</h4>
+<h4 id="textDocument_prepareCallHierarchy">Prepare Call Hierarchy
+Request (CR)</h4>
 <blockquote>
 <p><em>Since version 3.16.0</em></p>
 </blockquote>
@@ -6066,8 +6007,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb15
 <li>error: code and message set in case an exception happens during the
 'textDocument/prepareCallHierarchy' request</li>
 </ul>
-<h4 name="callHierarchy_incomingCalls"
-id="call-hierarchy-incoming-calls-cr">Call Hierarchy Incoming Calls
+<h4 id="callHierarchy_incomingCalls">Call Hierarchy Incoming Calls
 (CR)</h4>
 <blockquote>
 <p><em>Since version 3.16.0</em></p>
@@ -6119,8 +6059,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb15
 <li>error: code and message set in case an exception happens during the
 'callHierarchy/incomingCalls' request</li>
 </ul>
-<h4 name="callHierarchy_outgoingCalls"
-id="call-hierarchy-outgoing-calls-cr">Call Hierarchy Outgoing Calls
+<h4 id="callHierarchy_outgoingCalls">Call Hierarchy Outgoing Calls
 (CR)</h4>
 <blockquote>
 <p><em>Since version 3.16.0</em></p>
@@ -6172,9 +6111,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb15
 <li>error: code and message set in case an exception happens during the
 'callHierarchy/outgoingCalls' request</li>
 </ul>
-<h4 name="textDocument_prepareTypeHierarchy"
-id="prepare-type-hierarchy-request-cr">Prepare Type Hierarchy Request
-(CR)</h4>
+<h4 id="textDocument_prepareTypeHierarchy">Prepare Type Hierarchy
+Request (CR)</h4>
 <blockquote>
 <p><em>Since version 3.17.0</em></p>
 </blockquote>
@@ -6305,8 +6243,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb16
 <li>error: code and message set in case an exception happens during the
 'textDocument/prepareTypeHierarchy' request</li>
 </ul>
-<h4 name="typeHierarchy_supertypes"
-id="type-hierarchy-supertypescr">Type Hierarchy Supertypes(CR)</h4>
+<h4 id="typeHierarchy_supertypes">Type Hierarchy Supertypes(CR)</h4>
 <blockquote>
 <p><em>Since version 3.17.0</em></p>
 </blockquote>
@@ -6339,8 +6276,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb16
 <li>error: code and message set in case an exception happens during the
 'typeHierarchy/supertypes' request</li>
 </ul>
-<h4 name="typeHierarchy_subtypes" id="type-hierarchy-subtypescr">Type
-Hierarchy Subtypes(CR)</h4>
+<h4 id="typeHierarchy_subtypes">Type Hierarchy Subtypes(CR)</h4>
 <blockquote>
 <p><em>Since version 3.17.0</em></p>
 </blockquote>
@@ -6372,8 +6308,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb16
 <li>error: code and message set in case an exception happens during the
 'typeHierarchy/subtypes' request</li>
 </ul>
-<h4 name="textDocument_documentHighlight"
-id="document-highlights-request-cr">Document Highlights Request
+<h4 id="textDocument_documentHighlight">Document Highlights Request
 (CR)</h4>
 <p>The document highlight request is sent from the client to the server
 to resolve document highlights for a given text document position.<br />
@@ -6494,8 +6429,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb17
 <li>error: code and message set in case an exception happens during the
 document highlight request.</li>
 </ul>
-<h4 name="textDocument_documentLink"
-id="document-link-request-cr">Document Link Request (CR)</h4>
+<h4 id="textDocument_documentLink">Document Link Request (CR)</h4>
 <p>The document links request is sent from the client to the server to
 request the location of links in a document.</p>
 <p><em>Client Capability</em>:</p>
@@ -6609,9 +6543,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb17
 <li>error: code and message set in case an exception happens during the
 document link request.</li>
 </ul>
-<h4 name="documentLink_resolve"
-id="document-link-resolve-request-cr">Document Link Resolve Request
-(CR)</h4>
+<h4 id="documentLink_resolve">Document Link Resolve Request (CR)</h4>
 <p>The document link resolve request is sent from the client to the
 server to resolve the target of a given document link.</p>
 <p><em>Request</em>:</p>
@@ -6625,8 +6557,7 @@ server to resolve the target of a given document link.</p>
 <li>error: code and message set in case an exception happens during the
 document link resolve request.</li>
 </ul>
-<h4 name="textDocument_hover" id="hover-request-cr">Hover Request
-(CR)</h4>
+<h4 id="textDocument_hover">Hover Request (CR)</h4>
 <p>The hover request is sent from the client to the server to request
 hover information at a given text document position.</p>
 <p>When the client sends a hover request, the position typically refers
@@ -6742,8 +6673,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb18
 <li>error: code and message set in case an exception happens during the
 hover request.</li>
 </ul>
-<h4 name="textDocument_codeLens" id="code-lens-request-cr">Code Lens
-Request (CR)</h4>
+<h4 id="textDocument_codeLens">Code Lens Request (CR)</h4>
 <p>The code lens request is sent from the client to the server to
 compute code lenses for a given text document.</p>
 <p><em>Client Capability</em>:</p>
@@ -6841,8 +6771,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb18
 <li>error: code and message set in case an exception happens during the
 code lens request.</li>
 </ul>
-<h4 name="codeLens_resolve" id="code-lens-resolve-request-cr">Code Lens
-Resolve Request (CR)</h4>
+<h4 id="codeLens_resolve">Code Lens Resolve Request (CR)</h4>
 <p>The code lens resolve request is sent from the client to the server
 to resolve the command for a given code lens item.</p>
 <p><em>Request</em>:</p>
@@ -6856,8 +6785,7 @@ to resolve the command for a given code lens item.</p>
 <li>error: code and message set in case an exception happens during the
 code lens resolve request.</li>
 </ul>
-<h4 name="codeLens_refresh" id="code-lens-refresh-request-sr">Code Lens
-Refresh Request (SR)</h4>
+<h4 id="codeLens_refresh">Code Lens Refresh Request (SR)</h4>
 <blockquote>
 <p><em>Since version 3.16.0</em></p>
 </blockquote>
@@ -6902,8 +6830,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb18
 <li>error: code and message set in case an exception happens during the
 'workspace/codeLens/refresh' request</li>
 </ul>
-<h4 name="textDocument_foldingRange"
-id="folding-range-request-cr">Folding Range Request (CR)</h4>
+<h4 id="textDocument_foldingRange">Folding Range Request (CR)</h4>
 <blockquote>
 <p><em>Since version 3.10.0</em></p>
 </blockquote>
@@ -7102,8 +7029,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb19
 <li>error: code and message set in case an exception happens during the
 'textDocument/foldingRange' request</li>
 </ul>
-<h4 name="textDocument_selectionRange"
-id="selection-range-request-cr">Selection Range Request (CR)</h4>
+<h4 id="textDocument_selectionRange">Selection Range Request (CR)</h4>
 <blockquote>
 <p><em>Since version 3.15.0</em></p>
 </blockquote>
@@ -7207,8 +7133,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb19
 <li>error: code and message set in case an exception happens during the
 'textDocument/selectionRange' request</li>
 </ul>
-<h4 name="textDocument_documentSymbol"
-id="document-symbols-request-cr">Document Symbols Request (CR)</h4>
+<h4 id="textDocument_documentSymbol">Document Symbols Request (CR)</h4>
 <p>The document symbol request is sent from the client to the server.
 The returned result is either</p>
 <ul>
@@ -7514,8 +7439,7 @@ chunk defines the type of all the other chunks.</li>
 <li>error: code and message set in case an exception happens during the
 document symbol request.</li>
 </ul>
-<h4 name="textDocument_semanticTokens" id="semantic-tokens-cr">Semantic
-Tokens (CR)</h4>
+<h4 id="textDocument_semanticTokens">Semantic Tokens (CR)</h4>
 <blockquote>
 <p><em>Since version 3.16.0</em></p>
 </blockquote>
@@ -8125,8 +8049,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb23
 <li>error: code and message set in case an exception happens during the
 'workspace/semanticTokens/refresh' request</li>
 </ul>
-<h4 name="textDocument_inlayHint" id="inlay-hint-request-cr">Inlay Hint
-Request (CR)</h4>
+<h4 id="textDocument_inlayHint">Inlay Hint Request (CR)</h4>
 <blockquote>
 <p><em>Since version 3.17.0</em></p>
 </blockquote>
@@ -8385,8 +8308,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb23
 <li>error: code and message set in case an exception happens during the
 inlay hint request.</li>
 </ul>
-<h4 name="inlayHint_resolve" id="inlay-hint-resolve-request-cr">Inlay
-Hint Resolve Request (CR)</h4>
+<h4 id="inlayHint_resolve">Inlay Hint Resolve Request (CR)</h4>
 <blockquote>
 <p><em>Since version 3.17.0</em></p>
 </blockquote>
@@ -8421,8 +8343,8 @@ be used.</p>
 <li>error: code and message set in case an exception happens during the
 completion resolve request.</li>
 </ul>
-<h4 name="workspace_inlayHint_refresh"
-id="inlay-hint-refresh-request-sr">Inlay Hint Refresh Request (SR)</h4>
+<h4 id="workspace_inlayHint_refresh">Inlay Hint Refresh Request
+(SR)</h4>
 <blockquote>
 <p><em>Since version 3.17.0</em></p>
 </blockquote>
@@ -8472,8 +8394,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb23
 <li>error: code and message set in case an exception happens during the
 'workspace/inlayHint/refresh' request</li>
 </ul>
-<h4 name="textDocument_inlineValue" id="inline-value-request-cr">Inline
-Value Request (CR)</h4>
+<h4 id="textDocument_inlineValue">Inline Value Request (CR)</h4>
 <blockquote>
 <p><em>Since version 3.17.0</em></p>
 </blockquote>
@@ -8687,8 +8608,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb24
 <li>error: code and message set in case an exception happens during the
 inline values request.</li>
 </ul>
-<h4 name="workspace_inlineValue_refresh"
-id="inline-value-refresh-request-sr">Inline Value Refresh Request
+<h4 id="workspace_inlineValue_refresh">Inline Value Refresh Request
 (SR)</h4>
 <blockquote>
 <p><em>Since version 3.17.0</em></p>
@@ -8739,7 +8659,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb24
 <li>error: code and message set in case an exception happens during the
 'workspace/inlineValue/refresh' request</li>
 </ul>
-<h4 name="textDocument_moniker" id="monikers-cr">Monikers (CR)</h4>
+<h4 id="textDocument_moniker">Monikers (CR)</h4>
 <blockquote>
 <p><em>Since version 3.16.0</em></p>
 </blockquote>
@@ -8907,8 +8827,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb25
 calculation matches to those used in the corresponding LSIF
 implementation to ensure symbols can be associated correctly across IDE
 sessions and LSIF indexes.</p>
-<h4 name="textDocument_completion" id="completion-request-cr">Completion
-Request (CR)</h4>
+<h4 id="textDocument_completion">Completion Request (CR)</h4>
 <p>The Completion request is sent from the client to the server to
 compute completion items at a given cursor position. Completion items
 are presented in the <a
@@ -9713,7 +9632,7 @@ completion request.</li>
 <p>Completion items support snippets (see
 <code>InsertTextFormat.Snippet</code>). The snippet format is as
 follows:</p>
-<h5 name="snippet_syntax" id="snippet-syntax">Snippet Syntax</h5>
+<h5 id="snippet_syntax">Snippet Syntax</h5>
 <p>The <code>body</code> of a snippet can use special constructs to
 control cursors and the text being inserted. The following are supported
 features and their syntaxes:</p>
@@ -9808,8 +9727,7 @@ int         ::= [0-9]+
 text        ::= .*
 if          ::= text
 else        ::= text</code></pre>
-<h4 name="completionItem_resolve"
-id="completion-item-resolve-request-cr">Completion Item Resolve Request
+<h4 id="completionItem_resolve">Completion Item Resolve Request
 (CR)</h4>
 <p>The request is sent from the client to the server to resolve
 additional information for a given completion item.</p>
@@ -9824,8 +9742,7 @@ additional information for a given completion item.</p>
 <li>error: code and message set in case an exception happens during the
 completion resolve request.</li>
 </ul>
-<h4 name="textDocument_publishDiagnostics"
-id="publishdiagnostics-notification-cn">PublishDiagnostics Notification
+<h4 id="textDocument_publishDiagnostics">PublishDiagnostics Notification
 (CN)</h4>
 <p>Diagnostics notifications are sent from the server to the client to
 signal results of validation runs.</p>
@@ -9933,8 +9850,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb27
 <span id="cb274-17"><a href="#cb274-17" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb274-18"><a href="#cb274-18" aria-hidden="true" tabindex="-1"></a>    diagnostics<span class="op">:</span> Diagnostic[]<span class="op">;</span></span>
 <span id="cb274-19"><a href="#cb274-19" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="textDocument_pullDiagnostics" id="pull-diagnostics">Pull
-Diagnostics</h4>
+<h4 id="textDocument_pullDiagnostics">Pull Diagnostics</h4>
 <p>Diagnostics are currently published by the server to the client using
 a notification. This model has the advantage that for workspace wide
 diagnostics the server has the freedom to compute them at a server
@@ -10053,8 +9969,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb27
 <span id="cb277-7"><a href="#cb277-7" aria-hidden="true" tabindex="-1"></a>    TextDocumentRegistrationOptions<span class="op">,</span> DiagnosticOptions<span class="op">,</span></span>
 <span id="cb277-8"><a href="#cb277-8" aria-hidden="true" tabindex="-1"></a>    StaticRegistrationOptions {</span>
 <span id="cb277-9"><a href="#cb277-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h5 name="textDocument_diagnostic" id="document-diagnosticscr">Document
-Diagnostics(CR)</h5>
+<h5 id="textDocument_diagnostic">Document Diagnostics(CR)</h5>
 <p>The text document diagnostic request is sent from the client to the
 server to ask the server to compute the diagnostics for a given
 document. As with other pull requests the server is asked to compute the
@@ -10279,8 +10194,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb28
 <span id="cb286-6"><a href="#cb286-6" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">interface</span> DiagnosticServerCancellationData {</span>
 <span id="cb286-7"><a href="#cb286-7" aria-hidden="true" tabindex="-1"></a>    retriggerRequest<span class="op">:</span> <span class="dt">boolean</span><span class="op">;</span></span>
 <span id="cb286-8"><a href="#cb286-8" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h5 name="workspace_diagnostic" id="workspace-diagnosticscr">Workspace
-Diagnostics(CR)</h5>
+<h5 id="workspace_diagnostic">Workspace Diagnostics(CR)</h5>
 <p>The workspace diagnostic request is sent from the client to the
 server to ask the server to compute workspace wide diagnostics which
 previously were pushed from the server to the client. In contrast to the
@@ -10451,8 +10365,7 @@ compute the result right now. A server can return a
 the client should re-trigger the request. If no data is provided it
 defaults to <code>{ retriggerRequest: true }</code>:</li>
 </ul>
-<h5 name="diagnostic_refresh" id="diagnostics-refreshsr">Diagnostics
-Refresh(SR)</h5>
+<h5 id="diagnostic_refresh">Diagnostics Refresh(SR)</h5>
 <p>The <code>workspace/diagnostic/refresh</code> request is sent from
 the server to the client. Servers can use it to ask clients to refresh
 all needed document and workspace diagnostics. This is useful if a
@@ -10515,8 +10428,7 @@ servers to keep the request open for a long time. If a server closes a
 workspace diagnostic pull request the client should re-trigger the
 request.</li>
 </ul>
-<h4 name="textDocument_signatureHelp"
-id="signature-help-request-cr">Signature Help Request (CR)</h4>
+<h4 id="textDocument_signatureHelp">Signature Help Request (CR)</h4>
 <p>The signature help request is sent from the client to the server to
 request signature information at a given cursor position.</p>
 <p><em>Client Capability</em>:</p>
@@ -10817,8 +10729,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb30
 <li>error: code and message set in case an exception happens during the
 signature help request.</li>
 </ul>
-<h4 name="textDocument_codeAction" id="code-action-request-cr">Code
-Action Request (CR)</h4>
+<h4 id="textDocument_codeAction">Code Action Request (CR)</h4>
 <p>The code action request is sent from the client to the server to
 compute commands for a given text document and range. These commands are
 typically code fixes to either fix problems or to beautify/refactor
@@ -11278,8 +11189,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb31
 <li>error: code and message set in case an exception happens during the
 code action request.</li>
 </ul>
-<h4 name="codeAction_resolve" id="code-action-resolve-request-cr">Code
-Action Resolve Request (CR)</h4>
+<h4 id="codeAction_resolve">Code Action Resolve Request (CR)</h4>
 <blockquote>
 <p><em>Since version 3.16.0</em></p>
 </blockquote>
@@ -11316,8 +11226,7 @@ request before it can be applied.</p>
 <li>error: code and message set in case an exception happens during the
 code action resolve request.</li>
 </ul>
-<h4 name="textDocument_documentColor"
-id="document-color-request-cr">Document Color Request (CR)</h4>
+<h4 id="textDocument_documentColor">Document Color Request (CR)</h4>
 <blockquote>
 <p><em>Since version 3.6.0</em></p>
 </blockquote>
@@ -11439,8 +11348,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb31
 <li>error: code and message set in case an exception happens during the
 'textDocument/documentColor' request</li>
 </ul>
-<h4 name="textDocument_colorPresentation"
-id="color-presentation-request-cr">Color Presentation Request (CR)</h4>
+<h4 id="textDocument_colorPresentation">Color Presentation Request
+(CR)</h4>
 <blockquote>
 <p><em>Since version 3.6.0</em></p>
 </blockquote>
@@ -11514,9 +11423,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb32
 <li>error: code and message set in case an exception happens during the
 'textDocument/colorPresentation' request</li>
 </ul>
-<h4 name="textDocument_formatting"
-id="document-formatting-request-cr">Document Formatting Request
-(CR)</h4>
+<h4 id="textDocument_formatting">Document Formatting Request (CR)</h4>
 <p>The document formatting request is sent from the client to the server
 to format a whole document.</p>
 <p><em>Client Capability</em>:</p>
@@ -11631,9 +11538,8 @@ formatted.</li>
 <li>error: code and message set in case an exception happens during the
 formatting request.</li>
 </ul>
-<h4 name="textDocument_rangeFormatting"
-id="document-range-formatting-request-cr">Document Range Formatting
-Request (CR)</h4>
+<h4 id="textDocument_rangeFormatting">Document Range Formatting Request
+(CR)</h4>
 <p>The document range formatting request is sent from the client to the
 server to format a given range in a document.</p>
 <p><em>Client Capability</em>:</p>
@@ -11713,8 +11619,7 @@ formatted.</li>
 <li>error: code and message set in case an exception happens during the
 range formatting request.</li>
 </ul>
-<h4 name="textDocument_onTypeFormatting"
-id="document-on-type-formatting-request-cr">Document on Type Formatting
+<h4 id="textDocument_onTypeFormatting">Document on Type Formatting
 Request (CR)</h4>
 <p>The document on type formatting request is sent from the client to
 the server to format parts of the document during typing.</p>
@@ -11812,8 +11717,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb33
 <li>error: code and message set in case an exception happens during the
 range formatting request.</li>
 </ul>
-<h4 name="textDocument_rename" id="rename-request-cr">Rename Request
-(CR)</h4>
+<h4 id="textDocument_rename">Rename Request (CR)</h4>
 <p>The rename request is sent from the client to the server to ask the
 server to compute a workspace change so that the client can perform a
 workspace-wide rename of a symbol.</p>
@@ -11935,8 +11839,7 @@ performed for any reason. Examples include: there is nothing at given
 support renaming by the server or the code is invalid (e.g. does not
 compile).</li>
 </ul>
-<h4 name="textDocument_prepareRename"
-id="prepare-rename-request-cr">Prepare Rename Request (CR)</h4>
+<h4 id="textDocument_prepareRename">Prepare Rename Request (CR)</h4>
 <blockquote>
 <p><em>Since version 3.12.0</em></p>
 </blockquote>
@@ -11968,8 +11871,7 @@ the given position.</li>
 <li>error: code and message set in case the element can't be renamed.
 Clients should show the information in their user interface.</li>
 </ul>
-<h4 name="textDocument_linkedEditingRange"
-id="linked-editing-rangecr">Linked Editing Range(CR)</h4>
+<h4 id="textDocument_linkedEditingRange">Linked Editing Range(CR)</h4>
 <blockquote>
 <p><em>Since version 3.16.0</em></p>
 </blockquote>
@@ -12067,10 +11969,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb34
 <li>error: code and message set in case an exception happens during the
 'textDocument/linkedEditingRange' request</li>
 </ul>
-<h3 name="workspaceFeatures" id="workspace-features">Workspace
-Features</h3>
-<h4 name="workspace_symbol" id="workspace-symbols-request-cr">Workspace
-Symbols Request (CR)</h4>
+<h3 id="workspaceFeatures">Workspace Features</h3>
+<h4 id="workspace_symbol">Workspace Symbols Request (CR)</h4>
 <p>The workspace symbol request is sent from the client to the server to
 list project-wide symbols matching the query string. Since 3.17.0
 servers can also provide a handler for
@@ -12252,9 +12152,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb35
 <li>error: code and message set in case an exception happens during the
 workspace symbol request.</li>
 </ul>
-<h4 name="workspace_symbolResolve"
-id="workspace-symbol-resolve-request-cr">Workspace Symbol Resolve
-Request (CR)</h4>
+<h4 id="workspace_symbolResolve">Workspace Symbol Resolve Request
+(CR)</h4>
 <p>The request is sent from the client to the server to resolve
 additional information for a given workspace symbol.</p>
 <p><em>Request</em>:</p>
@@ -12268,8 +12167,7 @@ additional information for a given workspace symbol.</p>
 <li>error: code and message set in case an exception happens during the
 workspace symbol resolve request.</li>
 </ul>
-<h4 name="workspace_configuration"
-id="configuration-request-sr">Configuration Request (SR)</h4>
+<h4 id="workspace_configuration">Configuration Request (SR)</h4>
 <blockquote>
 <p><em>Since version 3.6.0</em></p>
 </blockquote>
@@ -12339,8 +12237,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb35
 <li>error: code and message set in case an exception happens during the
 'workspace/configuration' request</li>
 </ul>
-<h4 name="workspace_didChangeConfiguration"
-id="didchangeconfiguration-notification-sn">DidChangeConfiguration
+<h4 id="workspace_didChangeConfiguration">DidChangeConfiguration
 Notification (SN)</h4>
 <p>A notification sent from the client to the server to signal the
 change of configuration settings.</p>
@@ -12379,8 +12276,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb35
 <span id="cb355-4"><a href="#cb355-4" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb355-5"><a href="#cb355-5" aria-hidden="true" tabindex="-1"></a>    settings<span class="op">:</span> LSPAny<span class="op">;</span></span>
 <span id="cb355-6"><a href="#cb355-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="workspace_workspaceFolders"
-id="workspace-folders-request-sr">Workspace folders request (SR)</h4>
+<h4 id="workspace_workspaceFolders">Workspace folders request (SR)</h4>
 <blockquote>
 <p><em>Since version 3.6.0</em></p>
 </blockquote>
@@ -12464,8 +12360,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb35
 <li>error: code and message set in case an exception happens during the
 'workspace/workspaceFolders' request</li>
 </ul>
-<h4 name="workspace_didChangeWorkspaceFolders"
-id="didchangeworkspacefolders-notification-sn">DidChangeWorkspaceFolders
+<h4 id="workspace_didChangeWorkspaceFolders">DidChangeWorkspaceFolders
 Notification (SN)</h4>
 <blockquote>
 <p><em>Since version 3.6.0</em></p>
@@ -12521,8 +12416,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb36
 <span id="cb360-12"><a href="#cb360-12" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb360-13"><a href="#cb360-13" aria-hidden="true" tabindex="-1"></a>    removed<span class="op">:</span> WorkspaceFolder[]<span class="op">;</span></span>
 <span id="cb360-14"><a href="#cb360-14" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="workspace_willCreateFiles"
-id="willcreatefiles-request-cr">WillCreateFiles Request (CR)</h4>
+<h4 id="workspace_willCreateFiles">WillCreateFiles Request (CR)</h4>
 <p>The will create files request is sent from the client to the server
 before files are actually created as long as the creation is triggered
 from within the client either by a user action or by applying a
@@ -12709,9 +12603,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb36
 <li>error: code and message set in case an exception happens during the
 <code>willCreateFiles</code> request.</li>
 </ul>
-<h4 name="workspace_didCreateFiles"
-id="didcreatefiles-notification-sn">DidCreateFiles Notification
-(SN)</h4>
+<h4 id="workspace_didCreateFiles">DidCreateFiles Notification (SN)</h4>
 <p>The did create files notification is sent from the client to the
 server when files were created from within the client.</p>
 <p><em>Client Capability</em>:</p>
@@ -12735,8 +12627,7 @@ server when files were created from within the client.</p>
 <li>method: 'workspace/didCreateFiles'</li>
 <li>params: <code>CreateFilesParams</code></li>
 </ul>
-<h4 name="workspace_willRenameFiles"
-id="willrenamefiles-request-cr">WillRenameFiles Request (CR)</h4>
+<h4 id="workspace_willRenameFiles">WillRenameFiles Request (CR)</h4>
 <p>The will rename files request is sent from the client to the server
 before files are actually renamed as long as the rename is triggered
 from within the client either by a user action or by applying a
@@ -12812,9 +12703,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb36
 <li>error: code and message set in case an exception happens during the
 <code>workspace/willRenameFiles</code> request.</li>
 </ul>
-<h4 name="workspace_didRenameFiles"
-id="didrenamefiles-notification-sn">DidRenameFiles Notification
-(SN)</h4>
+<h4 id="workspace_didRenameFiles">DidRenameFiles Notification (SN)</h4>
 <p>The did rename files notification is sent from the client to the
 server when files were renamed from within the client.</p>
 <p><em>Client Capability</em>:</p>
@@ -12838,8 +12727,7 @@ server when files were renamed from within the client.</p>
 <li>method: 'workspace/didRenameFiles'</li>
 <li>params: <code>RenameFilesParams</code></li>
 </ul>
-<h4 name="workspace_willDeleteFiles"
-id="willdeletefiles-request-cr">WillDeleteFiles Request (CR)</h4>
+<h4 id="workspace_willDeleteFiles">WillDeleteFiles Request (CR)</h4>
 <p>The will delete files request is sent from the client to the server
 before files are actually deleted as long as the deletion is triggered
 from within the client either by a user action or by applying a
@@ -12909,9 +12797,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb37
 <li>error: code and message set in case an exception happens during the
 <code>workspace/willDeleteFiles</code> request.</li>
 </ul>
-<h4 name="workspace_didDeleteFiles"
-id="diddeletefiles-notification-sn">DidDeleteFiles Notification
-(SN)</h4>
+<h4 id="workspace_didDeleteFiles">DidDeleteFiles Notification (SN)</h4>
 <p>The did delete files notification is sent from the client to the
 server when files were deleted from within the client.</p>
 <p><em>Client Capability</em>:</p>
@@ -12935,8 +12821,7 @@ server when files were deleted from within the client.</p>
 <li>method: 'workspace/didDeleteFiles'</li>
 <li>params: <code>DeleteFilesParams</code></li>
 </ul>
-<h4 name="workspace_didChangeWatchedFiles"
-id="didchangewatchedfiles-notification-sn">DidChangeWatchedFiles
+<h4 id="workspace_didChangeWatchedFiles">DidChangeWatchedFiles
 Notification (SN)</h4>
 <p>The watched files notification is sent from the client to the server
 when the client detects changes to files and folders watched by the
@@ -13155,8 +13040,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb38
 <span id="cb381-17"><a href="#cb381-17" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb381-18"><a href="#cb381-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb381-19"><a href="#cb381-19" aria-hidden="true" tabindex="-1"></a><span class="im">export type</span> FileChangeType <span class="op">=</span> <span class="dv">1</span> <span class="op">|</span> <span class="dv">2</span> <span class="op">|</span> <span class="dv">3</span><span class="op">;</span></span></code></pre></div>
-<h4 name="workspace_executeCommand" id="execute-a-command-cr">Execute a
-command (CR)</h4>
+<h4 id="workspace_executeCommand">Execute a command (CR)</h4>
 <p>The <code>workspace/executeCommand</code> request is sent from the
 client to the server to trigger command execution on the server. In most
 cases the server creates a <code>WorkspaceEdit</code> structure and
@@ -13237,8 +13121,7 @@ the server to the client. Example requests that return a command are
 <li>error: code and message set in case an exception happens during the
 request.</li>
 </ul>
-<h4 name="workspace_applyEdit" id="applies-a-workspaceedit-sr">Applies a
-WorkspaceEdit (SR)</h4>
+<h4 id="workspace_applyEdit">Applies a WorkspaceEdit (SR)</h4>
 <p>The <code>workspace/applyEdit</code> request is sent from the server
 to the client to modify resource on the client side.</p>
 <p><em>Client Capability</em>:</p>
@@ -13306,9 +13189,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb38
 <li>error: code and message set in case an exception happens during the
 request.</li>
 </ul>
-<h3 name="windowFeatures" id="window-features">Window Features</h3>
-<h4 name="window_showMessage"
-id="showmessage-notification-cn">ShowMessage Notification (CN)</h4>
+<h3 id="windowFeatures">Window Features</h3>
+<h4 id="window_showMessage">ShowMessage Notification (CN)</h4>
 <p>The show message notification is sent from a server to a client to
 ask the client to display a particular message in the user
 interface.</p>
@@ -13361,8 +13243,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb38
 <span id="cb389-25"><a href="#cb389-25" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb389-26"><a href="#cb389-26" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb389-27"><a href="#cb389-27" aria-hidden="true" tabindex="-1"></a><span class="im">export type</span> MessageType <span class="op">=</span> <span class="dv">1</span> <span class="op">|</span> <span class="dv">2</span> <span class="op">|</span> <span class="dv">3</span> <span class="op">|</span> <span class="dv">4</span> <span class="op">|</span> <span class="dv">5</span><span class="op">;</span></span></code></pre></div>
-<h4 name="window_showMessageRequest"
-id="showmessage-request-sr">ShowMessage Request (SR)</h4>
+<h4 id="window_showMessageRequest">ShowMessage Request (SR)</h4>
 <p>The show message request is sent from a server to a client to ask the
 client to display a particular message in the user interface. In
 addition to the show message notification the request allows to pass
@@ -13434,8 +13315,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb39
 <li>error: code and message set in case an exception happens during
 showing a message.</li>
 </ul>
-<h4 name="window_showDocument" id="show-document-request-sr">Show
-Document Request (SR)</h4>
+<h4 id="window_showDocument">Show Document Request (SR)</h4>
 <blockquote>
 <p>New in version 3.16.0</p>
 </blockquote>
@@ -13527,8 +13407,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb39
 <li>error: code and message set in case an exception happens during
 showing a document.</li>
 </ul>
-<h4 name="window_logMessage" id="logmessage-notification-cn">LogMessage
-Notification (CN)</h4>
+<h4 id="window_logMessage">LogMessage Notification (CN)</h4>
 <p>The log message notification is sent from the server to the client to
 ask the client to log a particular message.</p>
 <p><em>Notification</em>:</p>
@@ -13551,8 +13430,8 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb39
 <span id="cb396-9"><a href="#cb396-9" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb396-10"><a href="#cb396-10" aria-hidden="true" tabindex="-1"></a>    message<span class="op">:</span> <span class="dt">string</span><span class="op">;</span></span>
 <span id="cb396-11"><a href="#cb396-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="window_workDoneProgress_create"
-id="create-work-done-progress-sr">Create Work Done Progress (SR)</h4>
+<h4 id="window_workDoneProgress_create">Create Work Done Progress
+(SR)</h4>
 <p>The <code>window/workDoneProgress/create</code> request is sent from
 the server to the client to ask the client to create a work done
 progress.</p>
@@ -13582,8 +13461,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb39
 server must not send any progress notification using the token provided
 in the <code>WorkDoneProgressCreateParams</code>.</li>
 </ul>
-<h4 name="window_workDoneProgress_cancel"
-id="cancel-a-work-done-progress-sn">Cancel a Work Done Progress
+<h4 id="window_workDoneProgress_cancel">Cancel a Work Done Progress
 (SN)</h4>
 <p>The <code>window/workDoneProgress/cancel</code> notification is sent
 from the client to the server to cancel a progress initiated on the
@@ -13604,8 +13482,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb39
 <span id="cb398-4"><a href="#cb398-4" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb398-5"><a href="#cb398-5" aria-hidden="true" tabindex="-1"></a>    token<span class="op">:</span> ProgressToken<span class="op">;</span></span>
 <span id="cb398-6"><a href="#cb398-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 name="telemetry_event" id="telemetry-notification-cn">Telemetry
-Notification (CN)</h4>
+<h4 id="telemetry_event">Telemetry Notification (CN)</h4>
 <p>The telemetry notification is sent from the server to the client to
 ask the client to log a telemetry event. The protocol doesn't specify
 the payload since no interpretation of the data happens in the protocol.
@@ -13616,9 +13493,8 @@ the extensions owing the corresponding server issuing the event.</p>
 <li>method: 'telemetry/event'</li>
 <li>params: 'object' | 'array';</li>
 </ul>
-<h4 name="miscellaneous" id="miscellaneous">Miscellaneous</h4>
-<h4 name="implementationConsiderations"
-id="implementation-considerations-1">Implementation Considerations</h4>
+<h4 id="miscellaneous">Miscellaneous</h4>
+<h4 id="implementationConsiderations">Implementation Considerations</h4>
 <p>Language servers usually run in a separate process and clients
 communicate with them in an asynchronous fashion. Additionally clients
 usually allow users to interact with the source code even if request
@@ -13678,7 +13554,7 @@ server to monitor the editor process and to shutdown itself if the
 editor process dies. The process id passed on the command line should be
 the same as the one passed in the initialize parameters. The command
 line argument to use is <code>--clientProcessId</code>.</p>
-<h4 name="metaModel" id="meta-model">Meta Model</h4>
+<h4 id="metaModel">Meta Model</h4>
 <p>Since 3.17 there is a meta model describing the LSP protocol:</p>
 <ul>
 <li><a href="../metaModel/metaModel.json">metaModel.json</a>: The actual
@@ -13690,8 +13566,8 @@ href="../metaModel/metaModel.schema.json">metaModel.schema.json</a>: A
 JSON schema file defining the data types that make up the meta model.
 Can be used to generate code to read the meta model JSON file.</li>
 </ul>
-<h3 name="changeLog" id="change-log">Change Log</h3>
-<h4 name="version_3_17_0" id="section">3.17.0 (05/10/2022)</h4>
+<h3 id="changeLog">Change Log</h3>
+<h4 id="version_3_17_0">3.17.0 (05/10/2022)</h4>
 <ul>
 <li>Specify how clients will handle stale requests.</li>
 <li>Add support for a completion item label details.</li>
@@ -13715,7 +13591,7 @@ items.</li>
 <li>Add support for notebook documents.</li>
 <li>Add support for diagnostic pull model.</li>
 </ul>
-<h4 name="version_3_16_0" id="section-1">3.16.0 (12/14/2020)</h4>
+<h4 id="version_3_16_0">3.16.0 (12/14/2020)</h4>
 <ul>
 <li>Add support for tracing.</li>
 <li>Add semantic token support.</li>
@@ -13754,7 +13630,7 @@ interface.</li>
 <li>Add support for change annotations in text edits as well as in
 create file, rename file and delete file operations.</li>
 </ul>
-<h4 name="version_3_15_0" id="section-2">3.15.0 (01/14/2020)</h4>
+<h4 id="version_3_15_0">3.15.0 (01/14/2020)</h4>
 <ul>
 <li>Add generic progress reporting support.</li>
 <li>Add specific work done progress reporting support to requests where
@@ -13777,40 +13653,40 @@ languages</li>
 <code>FormattingOptions</code>.</li>
 <li>Clarified <code>WorkspaceSymbolParams#query</code> parameter.</li>
 </ul>
-<h4 name="version_3_14_0" id="section-3">3.14.0 (12/13/2018)</h4>
+<h4 id="version_3_14_0">3.14.0 (12/13/2018)</h4>
 <ul>
 <li>Add support for signature label offsets.</li>
 <li>Add support for location links.</li>
 <li>Add support for <code>textDocument/declaration</code> request.</li>
 </ul>
-<h4 name="version_3_13_0" id="section-4">3.13.0 (9/11/2018)</h4>
+<h4 id="version_3_13_0">3.13.0 (9/11/2018)</h4>
 <ul>
 <li>Add support for file and folder operations (create, rename, move) to
 workspace edits.</li>
 </ul>
-<h4 name="version_3_12_0" id="section-5">3.12.0 (8/23/2018)</h4>
+<h4 id="version_3_12_0">3.12.0 (8/23/2018)</h4>
 <ul>
 <li>Add support for <code>textDocument/prepareRename</code>
 request.</li>
 </ul>
-<h4 name="version_3_11_0" id="section-6">3.11.0 (8/21/2018)</h4>
+<h4 id="version_3_11_0">3.11.0 (8/21/2018)</h4>
 <ul>
 <li>Add support for CodeActionOptions to allow a server to provide a
 list of code action it supports.</li>
 </ul>
-<h4 name="version_3_10_0" id="section-7">3.10.0 (7/23/2018)</h4>
+<h4 id="version_3_10_0">3.10.0 (7/23/2018)</h4>
 <ul>
 <li>Add support for hierarchical document symbols as a valid response to
 a <code>textDocument/documentSymbol</code> request.</li>
 <li>Add support for folding ranges as a valid response to a
 <code>textDocument/foldingRange</code> request.</li>
 </ul>
-<h4 name="version_3_9_0" id="section-8">3.9.0 (7/10/2018)</h4>
+<h4 id="version_3_9_0">3.9.0 (7/10/2018)</h4>
 <ul>
 <li>Add support for <code>preselect</code> property in
 <code>CompletionItem</code></li>
 </ul>
-<h4 name="version_3_8_0" id="section-9">3.8.0 (6/11/2018)</h4>
+<h4 id="version_3_8_0">3.8.0 (6/11/2018)</h4>
 <ul>
 <li>Added support for CodeAction literals to the
 <code>textDocument/codeAction</code> request.</li>
@@ -13818,11 +13694,11 @@ a <code>textDocument/documentSymbol</code> request.</li>
 <li>Corrected ColorPresentationParams.colorInfo to color (as in the
 <code>d.ts</code> and in implementations)</li>
 </ul>
-<h4 name="version_3_7_0" id="section-10">3.7.0 (4/5/2018)</h4>
+<h4 id="version_3_7_0">3.7.0 (4/5/2018)</h4>
 <ul>
 <li>Added support for related information to Diagnostics.</li>
 </ul>
-<h4 name="version_3_6_0" id="section-11">3.6.0 (2/22/2018)</h4>
+<h4 id="version_3_6_0">3.6.0 (2/22/2018)</h4>
 <p>Merge the proposed protocol for workspace folders, configuration, go
 to type definition, go to implementation and document color provider
 into the main branch of the specification. For details see:</p>
@@ -13853,27 +13729,27 @@ Presentation</a></li>
 new value <code>TriggerForIncompleteCompletions: 3 = 3</code> to signal
 the a completion request got trigger since the last result was
 incomplete.</p>
-<h4 name="version_3_5_0" id="section-12">3.5.0</h4>
+<h4 id="version_3_5_0">3.5.0</h4>
 <p>Decided to skip this version to bring the protocol version number in
 sync the with npm module vscode-languageserver-protocol.</p>
-<h4 name="version_3_4_0" id="section-13">3.4.0 (11/27/2017)</h4>
+<h4 id="version_3_4_0">3.4.0 (11/27/2017)</h4>
 <ul>
 <li><a
 href="https://github.com/Microsoft/language-server-protocol/issues/129">extensible
 completion item and symbol kinds</a></li>
 </ul>
-<h4 name="version_3_3_0" id="section-14">3.3.0 (11/24/2017)</h4>
+<h4 id="version_3_3_0">3.3.0 (11/24/2017)</h4>
 <ul>
 <li>Added support for <code>CompletionContext</code></li>
 <li>Added support for <code>MarkupContent</code></li>
 <li>Removed old New and Updated markers.</li>
 </ul>
-<h4 name="version_3_2_0" id="section-15">3.2.0 (09/26/2017)</h4>
+<h4 id="version_3_2_0">3.2.0 (09/26/2017)</h4>
 <ul>
 <li>Added optional <code>commitCharacters</code> property to the
 <code>CompletionItem</code></li>
 </ul>
-<h4 name="version_3_1_0" id="section-16">3.1.0 (02/28/2017)</h4>
+<h4 id="version_3_1_0">3.1.0 (02/28/2017)</h4>
 <ul>
 <li>Make the <code>WorkspaceEdit</code> changes backwards
 compatible.</li>
@@ -13881,7 +13757,7 @@ compatible.</li>
 from 2.x to 3.x around <code>WorkspaceEdit</code>and
 <code>TextDocumentEdit</code>.</li>
 </ul>
-<h4 name="version_3_0_0" id="version">3.0 Version</h4>
+<h4 id="version_3_0_0">3.0 Version</h4>
 <ul>
 <li>add support for client feature flags to support that servers can
 adapt to different client capabilities. An example is the new
