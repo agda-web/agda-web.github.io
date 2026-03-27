@@ -775,16 +775,17 @@ initialization.</p>
 <h2 name="baseProtocol" id="base-protocol">Base Protocol</h2>
 <p>The base protocol consists of a header and a content part (comparable
 to HTTP). The header and content part are<br />
-separated by a ''.</p>
+separated by a <code>\r\n</code>.</p>
 <h3 name="headerPart" id="header-part">Header Part</h3>
 <p>The header part consists of header fields. Each header field is
 comprised of a name and a value, separated by ': ' (a colon and a
 space). The structure of header fields conforms to the <a
 href="https://tools.ietf.org/html/rfc7230#section-3.2">HTTP
-semantic</a>. Each header field is terminated by ''. Considering the
-last header field and the overall header itself are each terminated with
-'', and that at least one header is mandatory, this means that two ''
-sequences always immediately precede the content part of a message.</p>
+semantic</a>. Each header field is terminated by <code>\r\n</code>.
+Considering the last header field and the overall header itself are each
+terminated with <code>\r\n</code>, and that at least one header is
+mandatory, this means that two <code>\r\n</code> sequences always
+immediately precede the content part of a message.</p>
 <p>Currently the following header fields are supported:</p>
 <table style="width:100%;">
 <colgroup>
@@ -816,7 +817,7 @@ Defaults to application/vscode-jsonrpc; charset=utf-8</td>
 </table>
 <p>{: .table .table-bordered .table-responsive}</p>
 <p>The header part is encoded using the 'ascii' encoding. This includes
-the '' separating the header and content part.</p>
+the <code>\r\n</code> separating the header and content part.</p>
 <h3 name="contentPart" id="content-part">Content Part</h3>
 <p>Contains the actual content of the message. The content part of a
 message uses <a href="http://www.jsonrpc.org/">JSON-RPC</a> to describe
@@ -1462,12 +1463,12 @@ file / line the conversion is best done where the file is read which is
 usually on the server side.</p>
 <p>To ensure that both client and server split the string into the same
 line representation the protocol specifies the following end-of-line
-sequences: '', '' and '. Positions are line end character agnostic. So
-you can not specify a position that denotes <code>\r|\n</code> or
-<code>\n|</code> where <code>|</code> represents the character
-offset.</p>
+sequences: '', <code>\r\n</code> and '. Positions are line end character
+agnostic. So you can not specify a position that denotes
+<code>\r|\n</code> or <code>\n|</code> where <code>|</code> represents
+the character offset.</p>
 <div class="sourceCode" id="cb24"><pre
-class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">const</span> EOL<span class="op">:</span> <span class="dt">string</span>[] <span class="op">=</span> [<span class="st">&#39;</span><span class="sc">\n</span><span class="st">&#39;</span><span class="op">,</span> <span class="st">&#39;</span><span class="sc">\r\n</span><span class="st">&#39;</span><span class="op">,</span> <span class="st">&#39;</span><span class="sc">\r</span><span class="st">&#39;</span>]<span class="op">;</span></span></code></pre></div>
+class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">const</span> EOL<span class="op">:</span> <span class="dt">string</span>[] <span class="op">=</span> [<span class="st">&#39;</span><span class="sc">\n</span><span class="st">&#39;</span><span class="op">,</span> <span class="vs">`</span><span class="sc">\r\n</span><span class="vs">`</span><span class="op">,</span> <span class="st">&#39;</span><span class="sc">\r</span><span class="st">&#39;</span>]<span class="op">;</span></span></code></pre></div>
 <h4 name="position" id="position">Position</h4>
 <p>Position in a text document expressed as zero-based line and
 zero-based character offset. A position is between two characters like
