@@ -362,9 +362,9 @@ id="toc-notificationMessage">Notification Message</a></li>
 <li><a href="#dollarRequests" id="toc-dollarRequests">$ Notifications
 and Requests</a></li>
 <li><a href="#cancelRequest" id="toc-cancelRequest">Cancellation Support
-(SN CN)</a></li>
-<li><a href="#progress" id="toc-progress">Progress Support (SN
-CN)</a></li>
+(CN SN)</a></li>
+<li><a href="#progress" id="toc-progress">Progress Support (CN
+SN)</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#languageServerProtocol"
@@ -446,39 +446,39 @@ id="toc-textdocumentclientcapabilities">TextDocumentClientCapabilities</a></li>
 id="toc-notebookdocumentclientcapabilities">NotebookDocumentClientCapabilities</a></li>
 </ul></li>
 <li><a href="#initialized" id="toc-initialized">Initialized Notification
-(SN)</a></li>
+(CN)</a></li>
 <li><a href="#client_registerCapability"
 id="toc-client_registerCapability">Register Capability (SR)</a></li>
 <li><a href="#client_unregisterCapability"
 id="toc-client_unregisterCapability">Unregister Capability (SR)</a></li>
 <li><a href="#setTrace" id="toc-setTrace">SetTrace Notification
-(SN)</a></li>
-<li><a href="#logTrace" id="toc-logTrace">LogTrace Notification
 (CN)</a></li>
+<li><a href="#logTrace" id="toc-logTrace">LogTrace Notification
+(SN)</a></li>
 <li><a href="#shutdown" id="toc-shutdown">Shutdown Request (CR)</a></li>
-<li><a href="#exit" id="toc-exit">Exit Notification (SN)</a></li>
+<li><a href="#exit" id="toc-exit">Exit Notification (CN)</a></li>
 </ul></li>
 <li><a href="#textDocument_synchronization"
 id="toc-textDocument_synchronization">Text Document Synchronization</a>
 <ul>
 <li><a href="#textDocument_didOpen"
 id="toc-textDocument_didOpen">DidOpenTextDocument Notification
-(SN)</a></li>
+(CN)</a></li>
 <li><a href="#textDocument_didChange"
 id="toc-textDocument_didChange">DidChangeTextDocument Notification
-(SN)</a></li>
+(CN)</a></li>
 <li><a href="#textDocument_willSave"
 id="toc-textDocument_willSave">WillSaveTextDocument Notification
-(SN)</a></li>
+(CN)</a></li>
 <li><a href="#textDocument_willSaveWaitUntil"
 id="toc-textDocument_willSaveWaitUntil">WillSaveWaitUntilTextDocument
 Request (CR)</a></li>
 <li><a href="#textDocument_didSave"
 id="toc-textDocument_didSave">DidSaveTextDocument Notification
-(SN)</a></li>
+(CN)</a></li>
 <li><a href="#textDocument_didClose"
 id="toc-textDocument_didClose">DidCloseTextDocument Notification
-(SN)</a></li>
+(CN)</a></li>
 <li><a href="#textDocument_didRename"
 id="toc-textDocument_didRename">Renaming a document</a></li>
 </ul></li>
@@ -488,16 +488,16 @@ Synchronization</a>
 <ul>
 <li><a href="#notebookDocument_didOpen"
 id="toc-notebookDocument_didOpen">DidOpenNotebookDocument Notification
-(SN)</a></li>
+(CN)</a></li>
 <li><a href="#notebookDocument_didChange"
 id="toc-notebookDocument_didChange">DidChangeNotebookDocument
-Notification (SN)</a></li>
+Notification (CN)</a></li>
 <li><a href="#notebookDocument_didSave"
 id="toc-notebookDocument_didSave">DidSaveNotebookDocument Notification
-(SN)</a></li>
+(CN)</a></li>
 <li><a href="#notebookDocument_didClose"
 id="toc-notebookDocument_didClose">DidCloseNotebookDocument Notification
-(SN)</a></li>
+(CN)</a></li>
 </ul></li>
 <li><a href="#languageFeatures" id="toc-languageFeatures">Language
 Features</a>
@@ -591,7 +591,7 @@ id="toc-completionItem_resolve">Completion Item Resolve Request
 (CR)</a></li>
 <li><a href="#textDocument_publishDiagnostics"
 id="toc-textDocument_publishDiagnostics">PublishDiagnostics Notification
-(CN)</a></li>
+(SN)</a></li>
 <li><a href="#textDocument_pullDiagnostics"
 id="toc-textDocument_pullDiagnostics">Pull Diagnostics</a>
 <ul>
@@ -645,31 +645,31 @@ id="toc-workspace_symbolResolve">Workspace Symbol Resolve Request
 id="toc-workspace_configuration">Configuration Request (SR)</a></li>
 <li><a href="#workspace_didChangeConfiguration"
 id="toc-workspace_didChangeConfiguration">DidChangeConfiguration
-Notification (SN)</a></li>
+Notification (CN)</a></li>
 <li><a href="#workspace_workspaceFolders"
 id="toc-workspace_workspaceFolders">Workspace folders request
 (SR)</a></li>
 <li><a href="#workspace_didChangeWorkspaceFolders"
 id="toc-workspace_didChangeWorkspaceFolders">DidChangeWorkspaceFolders
-Notification (SN)</a></li>
+Notification (CN)</a></li>
 <li><a href="#workspace_willCreateFiles"
 id="toc-workspace_willCreateFiles">WillCreateFiles Request (CR)</a></li>
 <li><a href="#workspace_didCreateFiles"
 id="toc-workspace_didCreateFiles">DidCreateFiles Notification
-(SN)</a></li>
+(CN)</a></li>
 <li><a href="#workspace_willRenameFiles"
 id="toc-workspace_willRenameFiles">WillRenameFiles Request (CR)</a></li>
 <li><a href="#workspace_didRenameFiles"
 id="toc-workspace_didRenameFiles">DidRenameFiles Notification
-(SN)</a></li>
+(CN)</a></li>
 <li><a href="#workspace_willDeleteFiles"
 id="toc-workspace_willDeleteFiles">WillDeleteFiles Request (CR)</a></li>
 <li><a href="#workspace_didDeleteFiles"
 id="toc-workspace_didDeleteFiles">DidDeleteFiles Notification
-(SN)</a></li>
+(CN)</a></li>
 <li><a href="#workspace_didChangeWatchedFiles"
 id="toc-workspace_didChangeWatchedFiles">DidChangeWatchedFiles
-Notification (SN)</a></li>
+Notification (CN)</a></li>
 <li><a href="#workspace_executeCommand"
 id="toc-workspace_executeCommand">Execute a command (CR)</a></li>
 <li><a href="#workspace_applyEdit" id="toc-workspace_applyEdit">Applies
@@ -679,21 +679,21 @@ a WorkspaceEdit (SR)</a></li>
 Features</a>
 <ul>
 <li><a href="#window_showMessage"
-id="toc-window_showMessage">ShowMessage Notification (CN)</a></li>
+id="toc-window_showMessage">ShowMessage Notification (SN)</a></li>
 <li><a href="#window_showMessageRequest"
 id="toc-window_showMessageRequest">ShowMessage Request (SR)</a></li>
 <li><a href="#window_showDocument" id="toc-window_showDocument">Show
 Document Request (SR)</a></li>
 <li><a href="#window_logMessage" id="toc-window_logMessage">LogMessage
-Notification (CN)</a></li>
+Notification (SN)</a></li>
 <li><a href="#window_workDoneProgress_create"
 id="toc-window_workDoneProgress_create">Create Work Done Progress
 (SR)</a></li>
 <li><a href="#window_workDoneProgress_cancel"
 id="toc-window_workDoneProgress_cancel">Cancel a Work Done Progress
-(SN)</a></li>
+(CN)</a></li>
 <li><a href="#telemetry_event" id="toc-telemetry_event">Telemetry
-Notification (CN)</a></li>
+Notification (SN)</a></li>
 <li><a href="#miscellaneous"
 id="toc-miscellaneous">Miscellaneous</a></li>
 <li><a href="#implementationConsiderations"
@@ -1097,7 +1097,7 @@ receives notifications starting with '$/' it is free to ignore the
 notification. If a server or client receives a request starting with
 '$/' it must error the request with error code
 <code>MethodNotFound</code> (e.g. <code>-32601</code>).</p>
-<h4 id="cancelRequest">Cancellation Support (SN CN)</h4>
+<h4 id="cancelRequest">Cancellation Support (CN SN)</h4>
 <p>The base protocol offers support for request cancellation. To cancel
 a request, a notification message with the following properties is
 sent:</p>
@@ -1120,7 +1120,7 @@ response back. In addition it allows for returning partial results on
 cancel. If the request returns an error response on cancellation it is
 advised to set the error code to
 <code>ErrorCodes.RequestCancelled</code>.</p>
-<h4 id="progress">Progress Support (SN CN)</h4>
+<h4 id="progress">Progress Support (CN SN)</h4>
 <blockquote>
 <p><em>Since version 3.15.0</em></p>
 </blockquote>
@@ -3989,7 +3989,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb82
 <span id="cb82-281"><a href="#cb82-281" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb82-282"><a href="#cb82-282" aria-hidden="true" tabindex="-1"></a>    experimental<span class="op">?:</span> LSPAny<span class="op">;</span></span>
 <span id="cb82-283"><a href="#cb82-283" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 id="initialized">Initialized Notification (SN)</h4>
+<h4 id="initialized">Initialized Notification (CN)</h4>
 <p>The initialized notification is sent from the client to the server
 after the client received the result of the <code>initialize</code>
 request but before the client is sending any other request or
@@ -4181,7 +4181,7 @@ class="sourceCode json"><code class="sourceCode json"><span id="cb91-1"><a href=
 <li>error: code and message set in case an exception happens during the
 request.</li>
 </ul>
-<h4 id="setTrace">SetTrace Notification (SN)</h4>
+<h4 id="setTrace">SetTrace Notification (CN)</h4>
 <p>A notification that should be used by the client to modify the trace
 setting of the server.</p>
 <p><em>Notification</em>:</p>
@@ -4196,7 +4196,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb92
 <span id="cb92-4"><a href="#cb92-4" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb92-5"><a href="#cb92-5" aria-hidden="true" tabindex="-1"></a>    value<span class="op">:</span> TraceValue<span class="op">;</span></span>
 <span id="cb92-6"><a href="#cb92-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 id="logTrace">LogTrace Notification (CN)</h4>
+<h4 id="logTrace">LogTrace Notification (SN)</h4>
 <p>A notification to log the trace of the server's execution.<br />
 The amount and content of these notifications depends on the current
 <code>trace</code> configuration.<br />
@@ -4248,7 +4248,7 @@ should error with <code>InvalidRequest</code>.</p>
 <li>error: code and message set in case an exception happens during
 shutdown request.</li>
 </ul>
-<h4 id="exit">Exit Notification (SN)</h4>
+<h4 id="exit">Exit Notification (CN)</h4>
 <p>A notification to ask the server to exit its process.<br />
 The server should exit with <code>success</code> code 0 if the shutdown
 request has been received before; otherwise with <code>error</code> code
@@ -4339,7 +4339,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb95
 <span id="cb95-13"><a href="#cb95-13" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb95-14"><a href="#cb95-14" aria-hidden="true" tabindex="-1"></a>    change<span class="op">?:</span> TextDocumentSyncKind<span class="op">;</span></span>
 <span id="cb95-15"><a href="#cb95-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 id="textDocument_didOpen">DidOpenTextDocument Notification (SN)</h4>
+<h4 id="textDocument_didOpen">DidOpenTextDocument Notification (CN)</h4>
 <p>The document open notification is sent from the client to the server
 to signal newly opened text documents. The document's content is now
 managed by the client and the server must not try to read the document's
@@ -4381,7 +4381,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb96
 <span id="cb96-5"><a href="#cb96-5" aria-hidden="true" tabindex="-1"></a>    textDocument<span class="op">:</span> TextDocumentItem<span class="op">;</span></span>
 <span id="cb96-6"><a href="#cb96-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <h4 id="textDocument_didChange">DidChangeTextDocument Notification
-(SN)</h4>
+(CN)</h4>
 <p>The document change notification is sent from the client to the
 server to signal changes to a text document. Before a client can change
 a text document it must claim ownership of its content using the
@@ -4522,7 +4522,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb99
 <span id="cb99-26"><a href="#cb99-26" aria-hidden="true" tabindex="-1"></a>    text<span class="op">:</span> <span class="dt">string</span><span class="op">;</span></span>
 <span id="cb99-27"><a href="#cb99-27" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code></pre></div>
 <h4 id="textDocument_willSave">WillSaveTextDocument Notification
-(SN)</h4>
+(CN)</h4>
 <p>The document will save notification is sent from the client to the
 server before the document is actually saved. If a server has registered
 for open / close events clients should ensure that the document is open
@@ -4639,7 +4639,7 @@ transferal.</p>
 <li>error: code and message set in case an exception happens during the
 <code>textDocument/willSaveWaitUntil</code> request.</li>
 </ul>
-<h4 id="textDocument_didSave">DidSaveTextDocument Notification (SN)</h4>
+<h4 id="textDocument_didSave">DidSaveTextDocument Notification (CN)</h4>
 <p>The document save notification is sent from the client to the server
 when the document was saved in the client.</p>
 <p><em>Client Capability</em>:</p>
@@ -4704,7 +4704,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb10
 <span id="cb104-11"><a href="#cb104-11" aria-hidden="true" tabindex="-1"></a>    text<span class="op">?:</span> <span class="dt">string</span><span class="op">;</span></span>
 <span id="cb104-12"><a href="#cb104-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <h4 id="textDocument_didClose">DidCloseTextDocument Notification
-(SN)</h4>
+(CN)</h4>
 <p>The document close notification is sent from the client to the server
 when the document got closed in the client. The document's master now
 exists where the document's Uri points to (e.g. if the document's Uri is
@@ -5212,7 +5212,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb12
 <span id="cb120-7"><a href="#cb120-7" aria-hidden="true" tabindex="-1"></a>    NotebookDocumentSyncOptions<span class="op">,</span> StaticRegistrationOptions {</span>
 <span id="cb120-8"><a href="#cb120-8" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <h4 id="notebookDocument_didOpen">DidOpenNotebookDocument Notification
-(SN)</h4>
+(CN)</h4>
 <p>The open notification is sent from the client to the server when a
 notebook document is opened. It is only sent by a client if the server
 requested the synchronization mode <code>notebook</code> in its
@@ -5246,7 +5246,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb12
 <span id="cb121-17"><a href="#cb121-17" aria-hidden="true" tabindex="-1"></a>    cellTextDocuments<span class="op">:</span> TextDocumentItem[]<span class="op">;</span></span>
 <span id="cb121-18"><a href="#cb121-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <h4 id="notebookDocument_didChange">DidChangeNotebookDocument
-Notification (SN)</h4>
+Notification (CN)</h4>
 <p>The change notification is sent from the client to the server when a
 notebook document changes. It is only sent by a client if the server
 requested the synchronization mode <code>notebook</code> in its
@@ -5392,7 +5392,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb12
 <span id="cb125-21"><a href="#cb125-21" aria-hidden="true" tabindex="-1"></a>    cells<span class="op">?:</span> NotebookCell[]<span class="op">;</span></span>
 <span id="cb125-22"><a href="#cb125-22" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <h4 id="notebookDocument_didSave">DidSaveNotebookDocument Notification
-(SN)</h4>
+(CN)</h4>
 <p>The save notification is sent from the client to the server when a
 notebook document is saved. It is only sent by a client if the server
 requested the synchronization mode <code>notebook</code> in its
@@ -5422,7 +5422,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb12
 <span id="cb126-10"><a href="#cb126-10" aria-hidden="true" tabindex="-1"></a>    notebookDocument<span class="op">:</span> NotebookDocumentIdentifier<span class="op">;</span></span>
 <span id="cb126-11"><a href="#cb126-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <h4 id="notebookDocument_didClose">DidCloseNotebookDocument Notification
-(SN)</h4>
+(CN)</h4>
 <p>The close notification is sent from the client to the server when a
 notebook document is closed. It is only sent by a client if the server
 requested the synchronization mode <code>notebook</code> in its
@@ -9743,7 +9743,7 @@ additional information for a given completion item.</p>
 completion resolve request.</li>
 </ul>
 <h4 id="textDocument_publishDiagnostics">PublishDiagnostics Notification
-(CN)</h4>
+(SN)</h4>
 <p>Diagnostics notifications are sent from the server to the client to
 signal results of validation runs.</p>
 <p>Diagnostics are "owned" by the server so it is the server's
@@ -12238,7 +12238,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb35
 'workspace/configuration' request</li>
 </ul>
 <h4 id="workspace_didChangeConfiguration">DidChangeConfiguration
-Notification (SN)</h4>
+Notification (CN)</h4>
 <p>A notification sent from the client to the server to signal the
 change of configuration settings.</p>
 <p><em>Client Capability</em>:</p>
@@ -12361,7 +12361,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb35
 'workspace/workspaceFolders' request</li>
 </ul>
 <h4 id="workspace_didChangeWorkspaceFolders">DidChangeWorkspaceFolders
-Notification (SN)</h4>
+Notification (CN)</h4>
 <blockquote>
 <p><em>Since version 3.6.0</em></p>
 </blockquote>
@@ -12603,7 +12603,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb36
 <li>error: code and message set in case an exception happens during the
 <code>willCreateFiles</code> request.</li>
 </ul>
-<h4 id="workspace_didCreateFiles">DidCreateFiles Notification (SN)</h4>
+<h4 id="workspace_didCreateFiles">DidCreateFiles Notification (CN)</h4>
 <p>The did create files notification is sent from the client to the
 server when files were created from within the client.</p>
 <p><em>Client Capability</em>:</p>
@@ -12703,7 +12703,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb36
 <li>error: code and message set in case an exception happens during the
 <code>workspace/willRenameFiles</code> request.</li>
 </ul>
-<h4 id="workspace_didRenameFiles">DidRenameFiles Notification (SN)</h4>
+<h4 id="workspace_didRenameFiles">DidRenameFiles Notification (CN)</h4>
 <p>The did rename files notification is sent from the client to the
 server when files were renamed from within the client.</p>
 <p><em>Client Capability</em>:</p>
@@ -12797,7 +12797,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb37
 <li>error: code and message set in case an exception happens during the
 <code>workspace/willDeleteFiles</code> request.</li>
 </ul>
-<h4 id="workspace_didDeleteFiles">DidDeleteFiles Notification (SN)</h4>
+<h4 id="workspace_didDeleteFiles">DidDeleteFiles Notification (CN)</h4>
 <p>The did delete files notification is sent from the client to the
 server when files were deleted from within the client.</p>
 <p><em>Client Capability</em>:</p>
@@ -12822,7 +12822,7 @@ server when files were deleted from within the client.</p>
 <li>params: <code>DeleteFilesParams</code></li>
 </ul>
 <h4 id="workspace_didChangeWatchedFiles">DidChangeWatchedFiles
-Notification (SN)</h4>
+Notification (CN)</h4>
 <p>The watched files notification is sent from the client to the server
 when the client detects changes to files and folders watched by the
 language client (note although the name suggest that only file events
@@ -13190,7 +13190,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb38
 request.</li>
 </ul>
 <h3 id="windowFeatures">Window Features</h3>
-<h4 id="window_showMessage">ShowMessage Notification (CN)</h4>
+<h4 id="window_showMessage">ShowMessage Notification (SN)</h4>
 <p>The show message notification is sent from a server to a client to
 ask the client to display a particular message in the user
 interface.</p>
@@ -13407,7 +13407,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb39
 <li>error: code and message set in case an exception happens during
 showing a document.</li>
 </ul>
-<h4 id="window_logMessage">LogMessage Notification (CN)</h4>
+<h4 id="window_logMessage">LogMessage Notification (SN)</h4>
 <p>The log message notification is sent from the server to the client to
 ask the client to log a particular message.</p>
 <p><em>Notification</em>:</p>
@@ -13462,7 +13462,7 @@ server must not send any progress notification using the token provided
 in the <code>WorkDoneProgressCreateParams</code>.</li>
 </ul>
 <h4 id="window_workDoneProgress_cancel">Cancel a Work Done Progress
-(SN)</h4>
+(CN)</h4>
 <p>The <code>window/workDoneProgress/cancel</code> notification is sent
 from the client to the server to cancel a progress initiated on the
 server side using the <code>window/workDoneProgress/create</code>. The
@@ -13482,7 +13482,7 @@ class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb39
 <span id="cb398-4"><a href="#cb398-4" aria-hidden="true" tabindex="-1"></a><span class="co">     */</span></span>
 <span id="cb398-5"><a href="#cb398-5" aria-hidden="true" tabindex="-1"></a>    token<span class="op">:</span> ProgressToken<span class="op">;</span></span>
 <span id="cb398-6"><a href="#cb398-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4 id="telemetry_event">Telemetry Notification (CN)</h4>
+<h4 id="telemetry_event">Telemetry Notification (SN)</h4>
 <p>The telemetry notification is sent from the server to the client to
 ask the client to log a telemetry event. The protocol doesn't specify
 the payload since no interpretation of the data happens in the protocol.
