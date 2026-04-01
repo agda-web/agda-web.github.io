@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Specification</title>
   <link rel="stylesheet" href="github-markdown.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark-dimmed.min.css">
+  <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css">
+  <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark-dimmed.min.css">
   <style>
 
 #TOC {
@@ -73,6 +74,9 @@
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #0d1117;
+    }
+    #TOC {
+      color: #ccc3;
     }
     .markdown-body {
         --fgColor-default: #ccc;
