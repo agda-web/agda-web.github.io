@@ -4,26 +4,55 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Specification</title>
+  <title>LSP v3.17 Specification</title>
   <link rel="stylesheet" href="github-markdown.css">
   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css">
   <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark-dimmed.min.css">
   <style>
 
-#TOC {
+body, html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#TOC-toggle {
+  width: 56px;
+  cursor: pointer;
   position: fixed;
-  padding: 8px;
-  font-size: .875rem;
+  left: 0;
   top: 0;
-  width: min(320px, 40vw);
+  z-index: 1;
+  color: #212830;
+  background-color: #f0f0f0;
+}
+
+#TOC {
+  padding: 8px;
+  padding-top: 72px;
+  font-size: .875rem;
+
+  position: fixed;
+  top: 0;
   bottom: 0;
   left: 0;
-  height: 100vh;
+  width: min(360px, 100vw);
   overflow: auto;
+
+  color: #666;
+  background-color: #f0f0f0;
+  border-right: 2px solid #c0c0c0;
+}
+
+#toc-title {
+  background: #8888;
+  padding: .25rem 4px;
 }
 
 #TOC a {
-  color: #bbb;
+  color: #333;
   text-decoration: none;
 }
 
@@ -43,11 +72,11 @@
 }
 
 .markdown-body {
-    box-sizing: border-box;
-    min-width: 200px;
-    max-width: 980px;
-    margin: 0 0 0 min(320px, 40vw);
-    padding: 45px;
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  padding: 45px;
+  margin-top: 56px;
 }
 
 .markdown-body .anchor {
@@ -66,21 +95,48 @@
 }
 
 @media (max-width: 767px) {
-    .markdown-body {
-        padding: 15px;
-    }
+  .markdown-body {
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #TOC {
+    padding-top: 8px;
+    width: 360px;
+    height: 100vh;
+  }
+
+  .markdown-body {
+    margin: 0 0 0 360px;
+  }
+
+  #TOC-toggle {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #0d1117;
-    }
-    #TOC {
-      color: #ccc3;
-    }
-    .markdown-body {
-        --fgColor-default: #ccc;
-    }
+  body {
+      background-color: #0d1117;
+  }
+
+  #TOC {
+    color: #ccc8;
+    background-color: #101010;
+    border-right-color: #303030;
+  }
+  #TOC a {
+    color: #bbb;
+  }
+  #TOC-toggle {
+    color: #3d444d;
+    background-color: #101010;
+  }
+
+  .markdown-body {
+    --fgColor-default: #ccc;
+  }
 }
 
   </style>
@@ -170,6 +226,7 @@
       color: #606060;
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -233,7 +290,6 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
@@ -252,9 +308,17 @@
 </head>
 <body>
 <!--<header id="title-block-header">
-<h1 class="title">Specification</h1>
+<h1 class="title">LSP v3.17 Specification</h1>
 </header>-->
+<div id="TOC-toggle"><svg xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%; stroke:currentColor" viewBox="0 0 120 120" width="54" height="54">
+  <title>Menu</title>
+  <path stroke-width="10" stroke-linecap="round" d="M30,60 h60  M30,30 m0,5 h60  M30,90 m0,-5 h60"></path>
+</svg></div>
+<script>
+  document.getElementById('TOC-toggle').onclick = () => { TOC.style.display = (TOC.style.display == 'none' ? '' : 'none') }
+</script>
 <nav id="TOC" role="doc-toc">
+<div id="toc-title">Table of contents</div>
 <ul>
 <li><a href="#whatIsNew" id="toc-whatIsNew">What's new in 3.17</a></li>
 <li><a href="#baseProtocol" id="toc-baseProtocol">Base Protocol</a>
