@@ -12004,7 +12004,7 @@ client. The registration parameter must have a
 <code>registrations</code> item of the following form, where
 <code>id</code> is a unique id used to unregister the capability (the
 example uses a UUID):</p>
-<pre class="ts"><code>{
+<pre class="typescript"><code>{
     id: &quot;28c6150c-bd7b-11e7-abc4-cec278b6b50a&quot;,
     method: &quot;workspace/didChangeWorkspaceFolders&quot;
 }</code></pre>
@@ -13371,7 +13371,8 @@ of the <code>rootPath</code> property.</li>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/typescript.min.js"></script>
-<script>hljs.highlightAll();</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/json.min.js"></script>
 <script type="text/javascript">
   var linkableTypes = new Map([
     ["integer", "#integer"],
@@ -13845,8 +13846,8 @@ of the <code>rootPath</code> property.</li>
     return anchor;
   }
 
-  function makeLinks() {
-    var elements = document.querySelectorAll(".hljs-title");
+  function makeLinks(el) {
+    var elements = el.parentNode.querySelectorAll(".typescript .hljs-title");
     for (var element of elements) {
       var typeName = element.textContent;
       var linkNode = tryGetAssociatedLink(typeName);
@@ -13858,7 +13859,7 @@ of the <code>rootPath</code> property.</li>
   }
 
   hljs.configure({
-    cssSelector: 'pre.typescript code',
+    cssSelector: 'pre.typescript code, pre.javascript code, pre.json code',
   })
 
   hljs.addPlugin({
